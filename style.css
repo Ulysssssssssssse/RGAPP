@@ -1,0 +1,62 @@
+body
+{
+    margin: 0px;
+
+}
+
+header
+{
+position: relative;
+z-index: 3;
+display: flex;
+justify-content: space-between;
+font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+height: 100px;
+margin-left: 0px;
+}
+
+#photovelo
+{
+    position: relative;
+    width: 100%;
+    z-index: 1;
+}
+
+.connexion
+{
+    font-size: 2em;
+}
+.titre
+{
+    font-size: 3.5em; 
+}
+
+.menu
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.descriptionproduit
+{
+    display: flex;
+    font-size: 1.5em  
+}
+
+.listedequestions
+{
+    font-size: 2em;
+}
+footer
+{
+color: white;
+display: flex;
+justify-content: space-around;
+font-size:2em ;
+background:green;
+bottom:0;
+width: 100%;
+margin: 0px;
+
+}
