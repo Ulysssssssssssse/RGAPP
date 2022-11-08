@@ -1,7 +1,66 @@
-.header
+body
+{
+    margin: 0px;
+}
+
+header
+{
+position: relative;
+z-index: 3;
+display: flex;
+justify-content: space-between;
+font-family: ELephant,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+height: 100px;
+margin-left: 0px;
+}
+
+#photovelo
+{
+    position: relative;
+    width: 100%;
+
+}
+
+.connexion
+{
+    font-size: 2em;
+}
+.titre
+{
+    font-size: 3.5em; 
+}
+
+.menu
 {
     display: flex;
-    align-content: space-around;
-    background-color: #BEEAFF;
-    font-size: 1.5em;
+    justify-content: space-between;
 }
+
+
+.descriptionproduit
+{
+    position: relative;
+
+    display: flex;
+    font-size: 1.5em 
+
+}
+
+.listedequestions
+{
+    font-size: 2em;
+}
+footer
+{
+position: relative;
+bottom:0;
+display: flex;
+justify-content: space-around;
+font-size:2em ;
+background:green;
+
+width: 100%;
+margin: 0px;
+
+}
+
