@@ -14,7 +14,21 @@ background: #BEEAFF;
 color: green;
 }
 
+.connexion
+{
+    
+    background: #BEEAFF;
+    height: 20%;
+    width: 30%;
 
+}
+
+.barre
+{
+    background-color: #BEEAFF;
+    height: 15%;
+    width: 20%;
+}
 
 
 footer
@@ -28,3 +42,4 @@ background: #BEEAFF;
 width: 100%;
 margin: 0px;
 }
+
