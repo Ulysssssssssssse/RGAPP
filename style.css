@@ -26,9 +26,10 @@ color: green;
 
 .barre
 {
-    background: transparent;
-    height: 15%;
-    width: 20%;
+    background-color: #BEEAFF;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1em;
 }
 
 
