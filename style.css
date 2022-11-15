@@ -16,7 +16,10 @@ color: green;
 
 .connexion
 {
-    
+    padding: 0.1%;
+    position: absolute;
+    left: 65%;
+    top: 40%;
     background: #BEEAFF;
     height: 30%;
     width: 30%;
