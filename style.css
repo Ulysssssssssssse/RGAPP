@@ -33,9 +33,10 @@ color: green;
 
 .barre
 {
+    
     background-color: #BEEAFF;
     border: none;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid red;
     font-size: 1em;
 }
 
