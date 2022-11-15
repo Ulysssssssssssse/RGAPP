@@ -26,7 +26,7 @@ color: green;
 
 .barre
 {
-    background-color: #BEEAFF;
+    background: transparent;
     height: 15%;
     width: 20%;
 }
