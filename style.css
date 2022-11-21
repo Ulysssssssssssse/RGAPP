@@ -14,6 +14,10 @@ background: #BEEAFF;
 color: green;
 }
 
+.back
+{
+    background-image: url(images/vélo2.jpg);
+}
 .connexion
 {
     color: green;
@@ -45,7 +49,6 @@ color: green;
     background-color: green;
     border: none;
     color: white;
-    width: 40%;
     font-size: 1em;
 }
 
