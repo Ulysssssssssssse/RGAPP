@@ -14,9 +14,12 @@ background: #BEEAFF;
 color: green;
 }
 
-.back
+.background
 {
-    background-image: url(images/vélo2.jpg);
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
 }
 .connexion
 {
@@ -25,12 +28,12 @@ color: green;
     flex-direction: column;
     align-items: center;
     position: absolute;
-    left: 65%;
+    left: 62%;
     top: 40%;
     background: #BEEAFF;
     background-size:contain;
-    height: 35%;
-    width: 20%;
+    height: 250px;
+    width: 300px;
     border-radius: 30px;
 
 }
@@ -55,7 +58,7 @@ color: green;
 
 footer
 {
-position: absolute;
+position: relative;
 bottom:0;
 display: flex;
 justify-content: space-around;
