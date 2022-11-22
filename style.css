@@ -1,12 +1,6 @@
-*
-{
-    meta : name "viewport :" content="width=device-width, initial-scale=1.0";
-
-}
-
 body
 {
-    margin: 0px;
+   margin: 0%;
 }
 
 header
@@ -20,14 +14,15 @@ background: #BEEAFF;
 color: green;
 }
 
-.background
+body 
 {
-    max-width: fit-device;
-    max-height: fit-device;
-    width: auto;
-    height: auto;
-    display: block;
+    background: url(images/photovelo.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
 }
+
 .connexion
 {
     color: green;
@@ -66,13 +61,12 @@ color: green;
 
 footer
 {
-position: relative;
+position: absolute;
 bottom:0;
 display: flex;
 justify-content: space-around;
 font-size:2em ;
 background: #BEEAFF;
 width: 100%;
-margin: 0px;
 }
 
