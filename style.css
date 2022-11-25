@@ -6,7 +6,6 @@ body
 header
 {
 font-size: 1.5em;
-height: 15%;
 display: flex;
 justify-content: space-between;
 font-family: Impact,'Arial Narrow Bold', sans-serif;
@@ -49,10 +48,23 @@ color: green;
     height: 250px;
     width: 300px;
     border-radius: 30px;
-    
-
 }
 
+#parametres
+{
+    justify-content: ;
+}
+.parametres
+{
+    right: 50%;
+    top: 50%;
+    color: green;
+    height: 80%;
+    width: 30%;
+    border-radius: 30px;
+}
+
+<<<<<<< ours
 .inscription
 {
     color: green;
@@ -69,24 +81,53 @@ color: green;
     border-radius: 30px; 
 }
 
+=======
+.titreprofil
+{
+    display: flex;
+    justify-content: space-between;
+}
+>>>>>>> theirs
 .barre
 {
-    
     background-color: #BEEAFF;
     border: none;
     border-bottom: 1px solid darkgreen;
     font-size: 1em;
 }
 
+.barre2
+{
+    height: 30px;
+    width: 100%;
+}
+
 .bouton
+{
+    height: auto;
+    width: auto;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 30px;
+}
+
+.signout
 {
     background-color: green;
     border: none;
     color: white;
     font-size: 1em;
+<<<<<<< ours
     border-radius: 10px;
     padding: 10px;
+=======
+    border-radius: 30px;
+    height: 60px;
+>>>>>>> theirs
 }
+
 
 
 footer
