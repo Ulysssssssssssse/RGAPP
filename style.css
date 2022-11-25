@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    font-family: Elephant,Impact,'Arial Narrow Bold', sans-serif;
 }
 
 header
@@ -30,7 +29,6 @@ color: green;
     background-attachment: fixed; 
     background-size: cover; 
 }
-
 
 .connexion
 {
@@ -63,40 +61,40 @@ color: green;
     border-radius: 30px;
 }
 
-<<<<<<< HEAD
-<<<<<<< ours
 .inscription
 {
+
     color: green;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position:absolute;
     left: 10%;
-    top: 40%;
+    top: 35%;
     background: #BEEAFF;
     background-size:contain;
-    height: 320px;
+    height: 310px;
     width: 300px;
     border-radius: 30px; 
 }
 
-=======
-=======
->>>>>>> 0b6900e2ab3dbdc2a6cb741ed7daf02647490be3
+div.inscription{
+    line-height: normal;
+}
+
+
 .titreprofil
 {
     display: flex;
     justify-content: space-between;
 }
-<<<<<<< HEAD
->>>>>>> theirs
-=======
->>>>>>> 0b6900e2ab3dbdc2a6cb741ed7daf02647490be3
+
+
 .barre
 {
+    
     background-color: #BEEAFF;
-    border: none;
+    border: 0cm;
     border-bottom: 1px solid darkgreen;
     font-size: 1em;
 }
@@ -106,16 +104,18 @@ color: green;
     justify-content: center;
     height: 30px;
     width: 90%;
+    font-size: small;
+
 }
 
 .bouton
 {
-    height: auto;
-    width: auto;
+    height: 50px;
+    width: 200px;
     background-color: green;
     border: none;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     border-radius: 30px;
 }
 
@@ -126,18 +126,13 @@ color: green;
     border: none;
     color: white;
     font-size: 1em;
-<<<<<<< HEAD
-<<<<<<< ours
     border-radius: 10px;
     padding: 10px;
-=======
     border-radius: 30px;
     height: 60px;
->>>>>>> theirs
-=======
     border-radius: 30px;
     height: 60px;
->>>>>>> 0b6900e2ab3dbdc2a6cb741ed7daf02647490be3
+
 }
 
 
