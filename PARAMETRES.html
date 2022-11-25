@@ -3,19 +3,22 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_PARAMETRES.css" />
+        <link rel="stylesheet" href="style_menudéroulant.css" />
         <link rel="stylesheet" href="style.css" />
-        <title>Paramètres</title>
+        <title>rGapp</title>
     </head>
 
     <body id="parametres">
         <header> 
             <a href="ACCUEIL.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>            
             <h1 class="titre">Paramètres</h1>
-            <!-- <input type="button" class="signout" value="Se déconnecter"> -->
+<<<<<<< HEAD
+            <input type="button" class="signout" value="Se déconnecter">
             <nav>
                 <ul>
                   <li class="menu-deroulant">
-                    <a href="#"><img class="logomenu"src="images/menu.png"></a>
+                    <img class="logomenu" src="images/menu.png">
                     <ul class="sous-menu">
                       <li><a href="ACCUEIL.html">Accueil</a></li>
                       <li><a href="DONNEES.html">Vos données</a></li>
@@ -25,6 +28,18 @@
                     </ul>
                   </li>
               </nav>
+=======
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="ACCUEIL.html">Accueil</a></li>
+                    <li><a href="PARAMETRES.html">Paramètres</a></li>
+                    <li><a href="DONNEES.html">Vos données</a></li>
+                    <li><a href="#">Se déconnecter</a></li>
+                  </ul>
+                </li>
+>>>>>>> 668f2d8ca8bf561c1404d37939ff29514dca35a0
 
         </header>
 
@@ -33,6 +48,8 @@
             <h1>Modifier votre profil</h1>
             <img src="images/photoprofil.png" alt="photoprofil">
             </div>
+            <br>
+            <div class="champs">
             <input type="email" class="barre2" placeholder="Nouvelle email" name="email" required>
             <br><br>
             <input type="password" class="barre2" placeholder="Nouveau mot de passe" name="password" required>
@@ -40,6 +57,7 @@
             <input type="password" class="barre2" placeholder="Confirmer mot de passe" name="password" required>
             <br><br>
             <a href="ACCUEIL.html"><input class="bouton" type="submit" value="Valider" name="connexion"></a>
+            </div>
         </div>
 
         <footer>           

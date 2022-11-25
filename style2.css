@@ -1,1 +1,106 @@
- 
+#connexion
+{
+    background: url(images/photovelo.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+#inscription
+{
+    background: url(images/photoVeloInscription.jpeg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+.connexion
+{
+  color: green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position:absolute;
+  right: 10%;
+  top: 35%;
+  background: rgba(190,234,255,0.6);
+  background-size:contain;
+  height: 300px;
+  width: 300px;
+  border-radius: 30px; 
+  padding: 20px;
+  font-size: 0.4cm
+}
+
+
+.parametres
+{
+    background: #BEEAFF;
+    position:absolute;
+    top: 30%;
+    right: 35%;
+    color: green;
+    height: 40%;
+    width: 30%;
+    position:absolute;
+    border-radius: 30px;
+}
+
+.inscription
+{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position:absolute;
+    left: 10%;
+    top: 35%;
+    background: rgba(190,234,255,0.6);
+    background-size:contain;
+    height: 380px;
+    width: 300px;
+    border-radius: 30px; 
+    padding: 20px;
+    font-size: 0.4cm
+}
+
+div.inscription{
+    line-height: normal;
+} 
+
+.barre
+{
+    color: black;
+    background: rgba(190,234,255,0.15);
+    border: 0cm;
+    border-bottom: 1px solid darkgreen;
+    font-size: 1.25em;
+    width: 7cm;
+
+}
+
+.bouton
+{
+    height: 50px;
+    width: 200px;
+    background-color: green;
+    border: none;
+    color: white;
+    font-size: 1em;
+    border-radius: 30px;
+}
+
+footer
+{
+    position: absolute;
+    display: flex;
+    bottom:0;
+    justify-content: space-around;
+    font-size:2em ;
+    background: #BEEAFF;
+    width: 100%;
+    color:azure;
+    background: rgba(190,234,255,0.65);
+}
