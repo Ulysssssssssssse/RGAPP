@@ -1,6 +1,6 @@
 body
 {
-   margin: 0%;
+   margin: 0.05%;
 }
 
 header
@@ -9,8 +9,8 @@ font-size: 1.5em;
 height: 15%;
 display: flex;
 justify-content: space-between;
-font-family: ELephant,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-background: #BEEAFF;
+font-family: Impact,'Arial Narrow Bold', sans-serif;
+background: #BEEAFF ;
 color: green;
 }
 
@@ -36,12 +36,14 @@ color: green;
 .connexion
 {
     color: green;
+    margin:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position:relative;
     right: 10%;
-    top: 40%;
+    top: auto;
+    bottom: auto;
     background: #BEEAFF;
     background-size:contain;
     height: 250px;
@@ -72,7 +74,7 @@ color: green;
     
     background-color: #BEEAFF;
     border: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid darkgreen;
     font-size: 1em;
 }
 
