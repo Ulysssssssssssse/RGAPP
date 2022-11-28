@@ -1,6 +1,6 @@
 body
 {
-   margin: 0%;
+   margin: 0.05%;
 }
 
 header
@@ -8,8 +8,8 @@ header
 font-size: 1.5em;
 display: flex;
 justify-content: space-between;
-font-family: ELephant,Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-background: #BEEAFF;
+font-family: Impact,'Arial Narrow Bold', sans-serif;
+background: #BEEAFF ;
 color: green;
 }
 
@@ -22,15 +22,27 @@ color: green;
     background-size: cover; 
 }
 
+#inscription
+{
+    background: url(images/photoVeloInscription.jpeg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+
 .connexion
 {
     color: green;
+    margin:auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: absolute;
+    position:relative;
     right: 10%;
-    top: 40%;
+    top: auto;
+    bottom: auto;
     background: #BEEAFF;
     background-size:contain;
     height: 250px;
@@ -38,6 +50,7 @@ color: green;
     border-radius: 30px;
 }
 
+<<<<<<< HEAD
 #parametres
 {
     justify-content: ;
@@ -57,11 +70,29 @@ color: green;
     display: flex;
     justify-content: space-between;
 }
+=======
+.inscription
+{
+    color: green;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    left: 10%;
+    top: 40%;
+    background: #BEEAFF;
+    background-size:contain;
+    height: 320px;
+    width: 300px;
+    border-radius: 30px; 
+}
+
+>>>>>>> ed0b1958a24f439f09450b67cb3cce13048c48e3
 .barre
 {
     background-color: #BEEAFF;
     border: none;
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid darkgreen;
     font-size: 1em;
 }
 
@@ -88,8 +119,13 @@ color: green;
     border: none;
     color: white;
     font-size: 1em;
+<<<<<<< HEAD
     border-radius: 30px;
     height: 60px;
+=======
+    border-radius: 10px;
+    padding: 10px;
+>>>>>>> ed0b1958a24f439f09450b67cb3cce13048c48e3
 }
 
 
