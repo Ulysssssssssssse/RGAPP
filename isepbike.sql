@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 22 nov. 2022 à 14:24
+-- Généré le : mar. 29 nov. 2022 à 15:29
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -20,8 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `isepbike`
 --
-CREATE DATABASE IF NOT EXISTS `isepbike` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-USE `isepbike`;
 
 -- --------------------------------------------------------
 
@@ -83,6 +81,14 @@ CREATE TABLE `utilisateurs` (
   `Nom` varchar(30) NOT NULL,
   `Prenom` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Table des utilisateurs';
+
+--
+-- Déchargement des données de la table `utilisateurs`
+--
+
+INSERT INTO `utilisateurs` (`NomUtilisateur`, `TypeUtilisateur`, `MotDePasse`, `AdresseMail`, `Nom`, `Prenom`) VALUES
+('Amine1102', 'Admin', 'bou@h', 'amine.laimeche@gmail.ocm', 'Laimeche', 'Amine'),
+('Test1', 'Visiteur', 'test1', 'test@gmail.com', 'Test', 'Test');
 
 --
 -- Index pour les tables déchargées
