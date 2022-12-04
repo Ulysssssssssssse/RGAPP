@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="style_PARAMETRES.css" />
         <link rel="stylesheet" href="style_menudéroulant.css" />
+        <link rel="stylesheet" href="style.css" />
         <title>rGapp</title>
     </head>
 
@@ -13,10 +13,9 @@
         <header> 
             <a href="ACCUEIL.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>            
             <h1 class="titre">Paramètres</h1>
-            <!-- <input type="button" class="signout" value="Se déconnecter"> -->
             <ul class="navbar">
-                <li>
-                  <a href="#"><img src="images/menu.png"></a>
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
                   <ul>
                     <li><a href="ACCUEIL.html">Accueil</a></li>
                     <li><a href="PARAMETRES.html">Paramètres</a></li>
@@ -33,6 +32,7 @@
             <img src="images/photoprofil.png" alt="photoprofil">
             </div>
             <br>
+            <div class="champs">
             <input type="email" class="barre2" placeholder="Nouvelle email" name="email" required>
             <br><br>
             <input type="password" class="barre2" placeholder="Nouveau mot de passe" name="password" required>
@@ -40,6 +40,7 @@
             <input type="password" class="barre2" placeholder="Confirmer mot de passe" name="password" required>
             <br><br>
             <a href="ACCUEIL.html"><input class="bouton" type="submit" value="Valider" name="connexion"></a>
+            </div>
         </div>
 
         <footer>           
