@@ -87,7 +87,7 @@ CREATE TABLE `utilisateurs` (
 --
 
 INSERT INTO `utilisateurs` (`NomUtilisateur`, `TypeUtilisateur`, `MotDePasse`, `AdresseMail`, `Nom`, `Prenom`) VALUES
-('Amine1102', 'Admin', 'bou@h', 'amine.laimeche@gmail.ocm', 'Laimeche', 'Amine'),
+('Amine1102', 'Admin', 'bou@h', 'amine.laimeche@gmail.com', 'Laimeche', 'Amine'),
 ('Test1', 'Visiteur', 'test1', 'test@gmail.com', 'Test', 'Test');
 
 --
