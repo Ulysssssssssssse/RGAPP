@@ -13,7 +13,7 @@ color: green;
 
 footer
 {
-    position: absolute;
+    position:fixed;
     display: flex;
     bottom:0;
     justify-content: space-around;

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style_DONNEES.css" />
+        <link rel="stylesheet" href="style_menudéroulant.css" />
+        <link rel="stylesheet" href="style.css" />
+        <title>rGapp</title>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script type="text/javascript" src="charts.js"></script>
+    </head>
+
+    <body id="donnees">
+        <header> 
+            <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>            
+            <h1 class="titre">Vos trajets</h1>
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="ACCUEIL.html">Accueil</a></li>
+                    <li><a href="PARAMETRES.html">Paramètres</a></li>
+                    <li><a href="DONNEES.html">Vos trajets</a></li>
+                    <li><a href="#">Se déconnecter</a></li>
+                  </ul>
+                </li>
+        </header>
+
+        <div class="donnees">
+            <div>
+            <h1>Votre dernier trajet</h1>
+            <div class="graphiques">
+                <div id="chartCO2" style="size: 50%;"></div>
+                <div id="chartBPM"></div>
+                <div id="chart°C"></div>
+                <div id="chartdB"></div>
+            </div>
+            </div>
+            <div id="table"></div>
+        </div>
+
+        <footer>           
+                <a href="CGU.html">Mentions légales</a>
+                <a href="mailto:ridegreencontact@gmail.com" title="ridegreencontact@gmail.com">Contact</a>
+                <a href="FAQ.html">FAQ</a>
+        </footer>
+
+    </body>
+</html>
