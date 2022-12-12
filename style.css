@@ -23,4 +23,13 @@ footer
     color:azure;
     background: rgba(190,234,255,0.85);
 }
+aside {
+    width: 40%;
+    padding-left: .5rem;
+    margin-left: .5rem;
+    float: right;
+    font-style: italic;
+    box-shadow: inset 5px 0 5px -5px #29627e;
+    background-color: rgb(202, 232, 243);
 
+  }
