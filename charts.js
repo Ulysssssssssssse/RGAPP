@@ -95,3 +95,32 @@ function drawTable() {
 
     table.draw(data, {width: '100%', height: '100%'});
   }
+
+
+google.charts.load("current", {packages:["corechart"]});
+google.charts.setOnLoadCallback(drawChart5);
+function drawChart5() {
+  var data = google.visualization.arrayToDataTable([
+    ["Element", "Density", { role: "style" } ],
+    ["CO2/100", 81.2, "#BEEAFF"],
+    ["Bpm", 113, "silver"],
+    ["°C", 37.6, "orange"],
+    ["dB", 76, "green"]
+  ]);
+
+  var view = new google.visualization.DataView(data);
+  view.setColumns([0, 1,
+                  { calc: "stringify",
+                    sourceColumn: 1,
+                    type: "string",
+                    role: "annotation" },
+                  2]);
+
+  var options = {
+    height: 400,
+    width: 700,
+    legend: { position: "none" },
+  };
+  var chart5 = new google.visualization.BarChart(document.getElementById("barchart"));
+  chart5.draw(view, options);
+}
