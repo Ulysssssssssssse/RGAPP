@@ -32,9 +32,8 @@ section{
     background-color: rgb(197, 192, 192);
     border-radius: .4rem;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     padding: 1rem;
-    box-shadow: .5rem 2px .5rem rgba(0, 0, 0, .1);
+    box-shadow: .5rem 2px .5rem rgba(179, 176, 176, 0.1);
 }
 
 .accordion-link {
