@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="style2.css" />
         <title>rGapp</title>
@@ -34,32 +36,32 @@
 
                                 case 'password':
                                     ?>
-                                        <div class="alert alert-success">
-                                            <strong>Succès </strong> mot de passe différents ! 
+                                        <div class="alert alert-danger">
+                                            <strong> Erreur </strong> mot de passe différents !   <!-- Test OK-->
                                         </div>
                                         <?php
                                         break;
 
                                 case 'email':
                                     ?>
-                                        <div class="alert alert-success">
-                                            <strong>Succès </strong> email non valide ! 
+                                        <div class="alert alert-danger">
+                                            <strong> Erreur </strong> email non valide ! <!-- Test OK, il faut modifier l'attribut "mail" en "text" pour pouvoir afficher l'erreur -->
                                         </div>
                                         <?php
                                         break;
                                                 
                                 case 'email_length':
                                     ?>
-                                        <div class="alert alert-success">
-                                            <strong>Succès </strong> email trop long ! 
+                                        <div class="alert alert-danger">
+                                            <strong> Erreur </strong> email trop long ! <!-- Test OK, inspecter et transformer 'mail' en 'text' pour afficher l'erreur-->
                                         </div>
                                         <?php
                                         break;
 
                                 case 'pseudo_length':
                                     ?>
-                                        <div class="alert alert-success">
-                                            <strong>Succès </strong> pseudo trop long ! 
+                                        <div class="alert alert-danger">
+                                            <strong> Erreur </strong> pseudo trop long ! <!-- Test OK-->
                                         </div>
                                         <?php
                                         break;
@@ -67,8 +69,8 @@
 
                                 case 'already':
                                     ?>
-                                        <div class="alert alert-success">
-                                            <strong>Succès </strong> compte deja existant ! 
+                                        <div class="alert alert-danger">
+                                            <strong>Erreur </strong> compte deja existant ! <!-- Test OK-->
                                         </div>
                                         <?php
                                         break;
@@ -88,12 +90,12 @@
                             <input class="barre" type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
                         <br><br>
                             <input class="barre" type="password" name="password_retype" placeholder="Retapez le mot de passe" required="required" autocomplete="off">
-                        <br><br>
+                        <br>
                         <div style="color: black;width: 7cm;">En vous inscrivant, vous acceptez nos<a href="CGU.html"> termes et conditions d'utilisation</a></div>
                         <br>
-                        <button type = "submit" class="boutton">Inscription</button>
+                        <button type = "submit" class="btn btn-primary btn-block">Inscription</button>
                         <br>
-                        <a href="accueil.php" style="font-size: 1.5em;"> Connexion </a>
+                        <a href="connexion.php" style="font-size: 1.5em;"> Connexion </a>
                         </div>
                     </form>
 
