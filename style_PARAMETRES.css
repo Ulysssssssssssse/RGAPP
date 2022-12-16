@@ -1,14 +1,25 @@
+#parametres
+{
+    background: url(images/photovelo2.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+}
 .parametres
 {
-    background: #BEEAFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(190,234,255,0.85);
     position:absolute;
     top: 30%;
     right: 35%;
     color: green;
-    height: 40%;
-    width: 30%;
-    position:absolute;
+    height: 400px;
+    width: 500px;
     border-radius: 30px;
+    padding: 20px;
 }
 
 .titreprofil
@@ -17,13 +28,19 @@
     justify-content: space-between;
 }
 
-.barre2
+.champs
 {
-    justify-content: center;
-    height: 30px;
-    width: 90%;
-    font-size: small;
+    align-items: center;
+}
 
+.barre
+{
+    color: black;
+    background: rgba(190,234,255,0.15);
+    border: 0cm;
+    border-bottom: 1px solid darkgreen;
+    font-size: 1.25em;
+    width: 7cm;
 }
 
 .bouton

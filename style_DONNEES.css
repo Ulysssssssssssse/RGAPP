@@ -1,0 +1,25 @@
+.donnees
+{
+    display: flex;
+    justify-content: space-around;
+}
+.graphiques
+{
+    display: flex;
+    flex-wrap: wrap;
+
+     
+}
+
+#table
+{
+
+    width: 70%;
+    
+}
+
+[id^=chart]
+{
+    height: 240px;
+    width: 450px;
+}

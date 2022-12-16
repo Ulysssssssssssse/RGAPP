@@ -1,0 +1,117 @@
+#page_daccueil
+{
+    background-image: url(images/photovelo3.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-size: cover; 
+}
+
+ #menu, #contenu {
+    padding:400px 0;
+    }
+
+    #menu  {
+    float:left;
+    width:1000px;
+    background-color:#3347ff;
+    opacity: 0.3;
+    }
+    #contenu {
+    margin-left:245px;
+    background-color:#a866ff;
+    opacity: 0.3;
+    }
+
+
+    .parametres
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(113, 199, 238, 0.85);
+        position: relative;
+        top: 80px; 
+        left: 85px;
+        color: green;
+        height: 900px;
+        width: 1100px;
+        border-radius: 30px;
+        padding: 40px;
+        border: 5px outset red;
+    }
+    
+    .parametres1
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(29, 161, 223, 0.85);
+        position: relative;
+        top: 150px; 
+        left: -350px;
+        color: green;
+        height: 170px;
+        width: 220px;
+        border-radius: 30px;
+        padding: 40px;
+        border: 5px outset rgb(88, 8, 236);
+    }
+    .parametres2
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(29, 161, 223, 0.85);
+        position: relative;
+        top: 200px; 
+        left: 30px;
+        color: green;
+        height: 170px;
+        width: 220px;
+        border-radius: 30px;
+        padding: 40px;
+        border: 5px outset rgb(88, 8, 236);   
+    }
+    .parametres3
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: rgba(29, 161, 223, 0.85);
+        position: relative;
+        top: -380px; 
+        left: 400px;
+        color: green;
+        height: 170px;
+        width: 220px;
+        border-radius: 30px;
+        padding: 40px;
+        border: 5px outset rgb(88, 8, 236);   
+    }   
+    .titreprofil
+    {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .champs
+    {
+        align-items: center;
+    }
+    
+
+    
+    .bouton
+    {
+        height: 175px;
+        width: 300px;
+        background-color: rgb(84, 186, 233);
+        border: none;
+        color: white;
+        font-size: 1em;
+        border-radius: 30px;
+    }
+    .bigger {
+        font-size: 80px;
+      }

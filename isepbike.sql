@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 29 nov. 2022 à 15:29
+-- Généré le : jeu. 15 déc. 2022 à 17:53
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -20,7 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `isepbike`
 --
-
+CREATE DATABASE IF NOT EXISTS `isepbike` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+USE `isepbike`;
 -- --------------------------------------------------------
 
 --
@@ -74,21 +75,24 @@ CREATE TABLE `mesures` (
 --
 
 CREATE TABLE `utilisateurs` (
-  `NomUtilisateur` varchar(20) NOT NULL,
-  `TypeUtilisateur` varchar(20) NOT NULL,
-  `MotDePasse` varchar(30) NOT NULL,
-  `AdresseMail` varchar(30) NOT NULL,
-  `Nom` varchar(30) NOT NULL,
-  `Prenom` varchar(25) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COMMENT='Table des utilisateurs';
+  `idUtilisateur` int(11) NOT NULL,
+  `pseudo` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `password` text NOT NULL,
+  `dateInscription` datetime NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Déchargement des données de la table `utilisateurs`
 --
 
-INSERT INTO `utilisateurs` (`NomUtilisateur`, `TypeUtilisateur`, `MotDePasse`, `AdresseMail`, `Nom`, `Prenom`) VALUES
-('Amine1102', 'Admin', 'bou@h', 'amine.laimeche@gmail.com', 'Laimeche', 'Amine'),
-('Test1', 'Visiteur', 'test1', 'test@gmail.com', 'Test', 'Test');
+INSERT INTO `utilisateurs` (`idUtilisateur`, `pseudo`, `email`, `password`, `dateInscription`) VALUES
+(1, 'test1', 'test1@gmail.com', '1b4f0e9851971998e732078544c96b36c3d01cedf7caa332359d6f1d83567014', '2022-12-12 20:22:19'),
+(2, 'test4', 'test4@gmail.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', '2022-12-13 16:22:12'),
+(3, 'test12', 'test12@gmail.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', '2022-12-15 09:04:00'),
+(4, 'test45', 'test45@gmail.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', '2022-12-15 09:45:14'),
+(5, 'test001', 'test001@gmail.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', '2022-12-15 12:17:58'),
+(6, 'test213', 'test213@gmail.com', '9f86d081884c7d659a2feaa0c55ad015a3bf4f1b2b0b822cd15d6c15b0f00a08', '2022-12-15 12:34:49');
 
 --
 -- Index pour les tables déchargées
@@ -117,7 +121,7 @@ ALTER TABLE `mesures`
 -- Index pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  ADD PRIMARY KEY (`NomUtilisateur`);
+  ADD PRIMARY KEY (`idUtilisateur`);
 
 --
 -- AUTO_INCREMENT pour les tables déchargées
@@ -134,6 +138,12 @@ ALTER TABLE `capteurs`
 --
 ALTER TABLE `faq`
   MODIFY `idFaq` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `utilisateurs`
+--
+ALTER TABLE `utilisateurs`
+  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- Contraintes pour les tables déchargées
