@@ -3,6 +3,10 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style_PRESENTATION.css" />
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style_menudéroulant.css" />
+
+
         <title>rGapp</title>
     </head>
 
@@ -10,7 +14,15 @@
         <header> 
             <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
             <h1 class="titre">rGapp</h1>
-            <img src="images/Isepbike logo.png" alt="IsepbikeInscription" id="IsepBike" /></a>
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="INSCRIPTION.php">Inscription</a></li>
+
+                  </ul>
+                </li>
             </div>
         </header>
         <footer>
@@ -18,23 +30,24 @@
             <a href="mailto:ridegreencontact@gmail.com" title="ridegreencontact@gmail.com">Contact</a>
             <a href="FAQ.html">FAQ</a>      
         </footer>
-        <div id ="box1">
-            <h1>
-            <div class = "ABOUT">
-                À PROPOS DE
-            </h1>
-                <p>
-                    <b>RideGreen</b> est une startup créée par 6 camarades de classe de l'ISEP, chacun avec une spécialité différente mais soucieux de l'environnement et de la santé humaine. Cette préoccupation a conduit à la création du principal produit de cette startup, appelé ISEPbike, qui vise à améliorer la santé humaine et l'environnement.
-
-                </p>
+        <div id ="about">
+            <div class = "about">
+                <p class="intro"><b>RideGreen</b> est une startup créée par 6 camarades de classe de l'ISEP, chacun avec une spécialité différente mais soucieux de l'environnement et de la santé humaine. Cette préoccupation a conduit à la création du principal produit de cette startup, appelé ISEPbike, qui vise à améliorer la santé humaine et l'environnement.</p>
+                <img class="isepbike" src="images/Isepbike.png" alt="Isepbike">
+                <div class="liste">
+                <li>Le vélo est l'un des moyens les plus efficaces de rester en bonne santé et de brûler des calories.​
+                </li><br>
+                <li>Des capteurs sonores pour surveiller les sons qui nous entourent​
+                </li><br>
+                <li>Des capteurs cardiaques pour surveiller la santé du cœur​
+                </li><br>
+                <li>Des thermomètres pour contrôler la température du corps pendant la course.​
+                </li><br>
+                <li>Des capteurs de gaz pour surveiller la qualité de l'air​.
+                </li><br>
+                </div>
             </div>
-            <h1>
-                <div class ="element2"> 2</div>
-        </h1>
-        <h1>
-            <div class ="element3">3</div>
-          </div>
-        </h1>
+        </div>
 
     </body>
 </html>
