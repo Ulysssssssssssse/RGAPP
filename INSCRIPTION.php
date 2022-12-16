@@ -27,7 +27,7 @@
                             switch($err)
                             {
                                 case 'success':
-                                    ?>
+                    ?>
                                         <div class="alert alert-success">
                                             <strong>Succès </strong> inscription reussie ! 
                                         </div>
@@ -35,7 +35,7 @@
                                         break;
 
                                 case 'password':
-                                    ?>
+                                        ?>
                                         <div class="alert alert-danger">
                                             <strong> Erreur </strong> mot de passe différents !   <!-- Test OK-->
                                         </div>
@@ -43,7 +43,7 @@
                                         break;
 
                                 case 'email':
-                                    ?>
+                                        ?>
                                         <div class="alert alert-danger">
                                             <strong> Erreur </strong> email non valide ! <!-- Test OK, il faut modifier l'attribut "mail" en "text" pour pouvoir afficher l'erreur -->
                                         </div>
@@ -51,7 +51,7 @@
                                         break;
                                                 
                                 case 'email_length':
-                                    ?>
+                                        ?>
                                         <div class="alert alert-danger">
                                             <strong> Erreur </strong> email trop long ! <!-- Test OK, inspecter et transformer 'mail' en 'text' pour afficher l'erreur-->
                                         </div>
@@ -59,7 +59,7 @@
                                         break;
 
                                 case 'pseudo_length':
-                                    ?>
+                                        ?>
                                         <div class="alert alert-danger">
                                             <strong> Erreur </strong> pseudo trop long ! <!-- Test OK-->
                                         </div>
@@ -68,7 +68,7 @@
 
 
                                 case 'already':
-                                    ?>
+                                        ?>
                                         <div class="alert alert-danger">
                                             <strong>Erreur </strong> compte deja existant ! <!-- Test OK-->
                                         </div>
@@ -78,7 +78,7 @@
                             }
                         }
 
-                        ?>
+                                        ?>
 
                     <form action="inscription_traitement.php" method="post">
                         <div class="inscription">
