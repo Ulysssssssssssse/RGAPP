@@ -36,7 +36,7 @@
 
 </header>
     
-    <h3> Bonjour <?php echo $_SESSION['user']; ?>, vous êtes connecté </h3>
+    <h3> Bonjour <?php echo $_SESSION['user']; ?>.</div></h3>
 
 
 <div class="leftcolumn">
@@ -56,14 +56,7 @@
     </div>
 </div>
 
-
-
-<footer>           
-        <a href="CGU.html">Mentions légales</a>
-        <a href="mailto:ridegreencontact@gmail.com" title="ridegreencontact@gmail.com">Contact</a>
-        <a href="FAQ.html">FAQ</a>
-</footer>
-
+<?php include('footer.php'); ?>
 
 </body>
 </html>
