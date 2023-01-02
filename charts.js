@@ -80,15 +80,16 @@ function drawChart() {
 function drawTable() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'date');
+    data.addColumn('string', 'time');
     data.addColumn('number', 'CO2');
     data.addColumn('number', 'BPM');
     data.addColumn('number', 'Temp. corp');
     data.addColumn('number', 'Bruit');
     data.addRows([
-      ['09/12/2022',  880,105,37.5, 85],
-      ['03/12/2022',   880,105,37.5, 85],
-      ['22/11/2022', 880,105,37.5, 85],
-      ['15/11/2022',   880,105,37.5, 85]
+      ['09/12/2022','18h30',  880,105,37.5, 85],
+      ['09/12/2022','8h30' , 880,105,37.5, 85],
+      ['22/11/2022','11h00' ,880,105,37.5, 85],
+      ['15/11/2022', '12h00' , 880,105,37.5, 85]
     ]);
 
     var table = new google.visualization.Table(document.getElementById('table'));
