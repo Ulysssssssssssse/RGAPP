@@ -2,6 +2,14 @@ body {
     margin: 0px;
 }
 
+header
+{
+    font-size: 1.5em;
+display: flex;
+justify-content: space-between;
+background: rgba(190,234,255,0.85);
+color: green;
+}
 .ligne1
 {
 font-size: 1.5em;
