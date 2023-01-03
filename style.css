@@ -4,11 +4,8 @@ body {
 
 header
 {
-    font-size: 1.5em;
 display: flex;
-justify-content: space-between;
-background: rgba(190,234,255,0.85);
-color: green;
+flex-direction: column;
 }
 .ligne1
 {
@@ -21,11 +18,18 @@ color: green;
 
 .ligne2
 {
-font-size: 1.5em;
-display: flex;
-justify-content: space-around;
-background: rgba(190,234,255,0.85);
-color: green;
+    padding: 7px;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-around;
+    background: rgba(190,234,255,0.85);
+    color: green;
+}
+
+.ligne2 a
+{
+    text-decoration: none;
+
 }
 
 footer
