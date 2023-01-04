@@ -68,7 +68,7 @@
                         <br> <br>
                             <button class="btn btn-primary btn-block" type="submit" value="Connexion" name=Connexion >Connexion</button>
                             <br>
-                            <a href="inscription.php" style="font-size: 1.5em;"> inscription </a>
+                            <a href="inscription.php" style="font-size: 1.5em;">Inscription</a>
                     </div>
                     </form>
                 </div>
