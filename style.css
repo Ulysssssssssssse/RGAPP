@@ -4,9 +4,10 @@ body {
 
 header
 {
-display: flex;
-flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
+
 .ligne1
 {
 font-size: 1.5em;
@@ -53,4 +54,4 @@ aside {
     box-shadow: inset 5px 0 5px -5px #29627e;
     background-color: rgb(202, 232, 243);
 
-  }
+}
