@@ -96,7 +96,10 @@
             <br><br>
                 <input class="barre" type="password" name="password_retype" placeholder="Retapez le mot de passe" required="required" autocomplete="off">
             <br>
-            <div style="color: black;width: 7cm;">En vous inscrivant, vous acceptez nos<a href="CGU.html"> termes et conditions d'utilisation</a></div>
+            <div style="color: black;width: 7cm;">
+                <input type="checkbox" id="CGU" name="CGU" value="CGU" required="required">
+                En cochant la case, vous acceptez nos <a href="CGU.html">termes et conditions d'utilisation</a>
+            </div>
             <br>
             <button type = "submit" class="btn btn-primary btn-block">Inscription</button>
             <br>
