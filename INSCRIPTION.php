@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +10,6 @@
     <title>rGapp</title>
 </head>
 
-
-        
             <body id="inscription">
             <header>
             <div class="ligne1">
@@ -37,7 +35,10 @@
             <script src="headerresponsive.js"></script>    
 
             </header>
-
+            <?php
+            if(isset($_GET['reg_err']))
+            {
+                $err = htmlspecialchars($_GET['reg_err']);
                 switch($err)
                 {
                     case 'success':
