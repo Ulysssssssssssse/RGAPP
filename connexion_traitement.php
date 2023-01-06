@@ -21,6 +21,8 @@ require_once 'config.php';
             if($data['password'] === $password)
             {
                 $_SESSION['user'] = $data['pseudo'];
+                $_SESSION['email'] = $email;
+
                 header('location:accueil.php');
             } else header('location:connexion.php?login_err=password');
         }else header('location:connexion.php?login_err=email');
