@@ -2,7 +2,7 @@
 
 try
 {
-    $conn = new mysqli('localhost; dbname=isepbike; charset=utf8', 'root', '');
+    $bdd = new mysqli('localhost; dbname=isepbike; charset=utf8', 'root', '');
 }catch(Exception $e)
 
 {

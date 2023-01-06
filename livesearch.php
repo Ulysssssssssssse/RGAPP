@@ -12,7 +12,7 @@ if(!$con){
 if(isset($_POST['input'])){
 
     $input = $_POST['input'];
-    $query = "SELECT * FROM utilisateurs WHERE pseudo LIKE '{$input}%'";
+    $query = "SELECT * FROM utilisateurs WHERE pseudo LIKE '{$input}%' OR idUtilisateur LIKE '{$input}%' OR email LIKE '{$input}%' ";
     $result = mysqli_query($con, $query);
 
     if(mysqli_num_rows($result) > 0){?>
