@@ -2,54 +2,77 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style_PRESENTATION.css" />
         <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="style2.css" />
         <link rel="stylesheet" href="style_menudéroulant.css" />
-
-
         <title>rGapp</title>
     </head>
 
-    <body id="inscription">
+    <body id="présentation">
         <header>
             <div class="ligne1">
             <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
             <h1 class="titre">rGapp</h1>
-            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" /></a>
+            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                  </ul>
+                </li>
+            </ul>
             </div>
             <div class="ligne2">
                 <a href="PRESENTATION.html">Présentation</a>
                 <a href="connexion.php">Connexion</a>
                 <a href="INSCRIPTION.php">Inscription</a>
             </div>
+        <script src="headerresponsive.js"></script>    
+
         </header>
 
 
-        <div id ="about">
-            <div class = "about">
+        <div  class="about">
                 <p class="intro"><b>RideGreen</b> est une startup créée par 6 camarades de classe de l'ISEP, chacun avec une spécialité différente mais soucieux de l'environnement et de la santé humaine. Cette préoccupation a conduit à la création du principal produit de cette startup, appelé ISEPbike, qui vise à améliorer la santé humaine et l'environnement.</p>
-                <img class="isepbike" src="images/Isepbike.png" alt="Isepbike">
+                <img class="isepbike" src="images/Isepbike.png" alt="Isepbike" style="size: 50%;">
                 <div class="liste">
-                <li>Le vélo est l'un des moyens les plus efficaces de rester en bonne santé et de brûler des calories.​
-                </li><br>
-                <li>Des capteurs sonores pour surveiller les sons qui nous entourent​
-                </li><br>
-                <li>Des capteurs cardiaques pour surveiller la santé du cœur​
-                </li><br>
-                <li>Des thermomètres pour contrôler la température du corps pendant la course.​
-                </li><br>
-                <li>Des capteurs de gaz pour surveiller la qualité de l'air​.
-                </li><br>
+                    <li>Le vélo est l'un des moyens les plus efficaces de rester en bonne santé et de brûler des calories.​
+                    </li><br>
+                    <li>Des capteurs sonores pour surveiller les sons qui nous entourent​
+                    </li><br>
+                    <li>Des capteurs cardiaques pour surveiller la santé du cœur​
+                    </li><br>
+                    <li>Des thermomètres pour contrôler la température du corps pendant la course.​
+                    </li><br>
+                    <li>Des capteurs de gaz pour surveiller la qualité de l'air​.
+                    </li><br>
+
+                <div class="news">
+                    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                    <h2>News and Updates</h2>
+                    <div id="news"></div>
+  <script>
+    // Remplacez YOUR_API_KEY par votre clé d'API NewsAPI
+    const API_KEY = "92e47a9623ed4cb487bc9a60f6a7166b";
+  
+    // Définissez l'URL de l'API en spécifiant le sujet (écologie) et le nombre de résultats souhaité (3)
+    const API_URL = `https://newsapi.org/v2/everything?q=foot&pageSize=3&apiKey=${API_KEY}`;
+  
+    // Effectuez une requête à l'API en utilisant la méthode $.get() de jQuery
+    $.get(API_URL, function(data) {
+      // Récupérez les liens des nouvelles à partir de la réponse de l'API
+      const links = data.articles.map(article => article.url);
+  
+      // Affichez les liens dans l'élément HTML précédemment créé
+      links.forEach(link => {
+        $("#news").append(`<p><a href="${link}">${link}</a></p>`);
+      });
+    });
+  </script>
                 </div>
-            </div>
-            <div class="rightcolumn">
-                <div class="card">
-                  <h2>News and Updates</h2>
-                  <div class="fakeimg"><a href='https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants'>L’Union européenne approuve une taxe carbone aux frontières</a><img src=https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants"></div><br>
-                  <div class="fakeimg"><a href='https://www.liberation.fr/environnement/pollution-sonore-maritime-le-niveau-de-bruit-en-mer-double-tous-les-dix-ans-20221211_UGTPDR2HJZGM5IFDKH3DUAS37Y/'>Pollution sonore maritime : «Le niveau de bruit en mer double tous les dix ans»</a><img src=https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants"></div><br>
-                  <div class="fakeimg"><a href='https://www.lagazettedescommunes.com/841298/pourquoi-la-pollution-venant-des-transports-ne-baisse-pas/'>Pourquoi la pollution venant des transports ne baisse pas</a></div>
-                </div>
-            </div>
         </div>
         <footer>
             <a href="CGU.html">Mentions légales</a>

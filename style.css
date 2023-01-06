@@ -32,11 +32,12 @@ color: green;
 
 }
 
+
 footer
 {
-    position:fixed;
-    display: flex;
+    position:relative;
     bottom:0;
+    display: flex;
     justify-content: space-around;
     font-size:2em ;
     background: #BEEAFF;
