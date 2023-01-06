@@ -39,8 +39,8 @@
             <div class="ligne2">
               <a href="ACCUEIL.php">Accueil</a>
               <a href="PARAMETRES.html">Paramètres</a>
-              <li><a href="DONNEES.html">Vos trajets</a>
-              <li><a href="deconnexion.php">Se déconnecter</a>
+              <a href="DONNEES.html">Vos trajets</a>
+              <a href="deconnexion.php">Se déconnecter</a>
             </div>
         <script src="headerresponsive.js"></script>
 </header>
