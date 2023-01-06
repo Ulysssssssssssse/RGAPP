@@ -49,12 +49,39 @@
 
 <div class="rightcolumn">
     <div class="card">
-      <h2>News and Updates</h2>
-      <div class="fakeimg"><a href='https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants'>L’Union européenne approuve une taxe carbone aux frontières</a><img src=https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants"></div><br>
-      <div class="fakeimg"><a href='https://www.liberation.fr/environnement/pollution-sonore-maritime-le-niveau-de-bruit-en-mer-double-tous-les-dix-ans-20221211_UGTPDR2HJZGM5IFDKH3DUAS37Y/'>Pollution sonore maritime : «Le niveau de bruit en mer double tous les dix ans»</a><img src=https://www.france24.com/fr/europe/20221213-l-ue-approuve-une-taxe-carbone-sur-les-importations-de-produits-polluants"></div><br>
-      <div class="fakeimg"><a href='https://www.lagazettedescommunes.com/841298/pourquoi-la-pollution-venant-des-transports-ne-baisse-pas/'>Pourquoi la pollution venant des transports ne baisse pas</a></div>
+      <h2>Rechercher un utilisateur</h2>
     </div>
+    <input type="text" class="form-control" id="live_search" autocomplete="off" placeholder="Search ...">
 </div>
+
+<div id="searchresult"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+  $(document).ready(function(){
+
+    $('#live_search').keyup(function(){
+
+      var input = $(this).val();
+      // alert(input)
+
+      if(input != ""){
+        $.ajax({
+          url : "livesearch.php",
+          method : "POST",
+          data:{input:input},
+          success:function(data){
+            $("#searchresult").html(data);
+          }
+        });
+      }else{
+        $("searchresult").css("display","none");
+      }
+    });
+  });
+
+</script>
 
 <?php include('footer.php'); ?>
 
