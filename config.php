@@ -13,10 +13,10 @@ try
 ?>
 
 <?php
-  $host       = "<endpoint>";
-  $username   = "<username>";
-  $password   = "<password>";
-  $dsn        = "mysql:host=$host;dbname=tasks";
+  $host       = "<localhost>";
+  $username   = "<root>";
+  $password   = "<1234>";
+  $dsn        = "mysql:host=$host;dbname=isepbike";
   $options    = array(
                   PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION
                 );
