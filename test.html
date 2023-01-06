@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Actualités écologiques</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</head>
+<body>
+  <div id="news"></div>
+  <script>
+    // Remplacez YOUR_API_KEY par votre clé d'API NewsAPI
+    const API_KEY = "92e47a9623ed4cb487bc9a60f6a7166b";
+  
+    // Définissez l'URL de l'API en spécifiant le sujet (écologie) et le nombre de résultats souhaité (3)
+    const API_URL = `https://newsapi.org/v2/everything?q=ecologie&pageSize=3&apiKey=${API_KEY}`;
+  
+    // Effectuez une requête à l'API en utilisant la méthode $.get() de jQuery
+    $.get(API_URL, function(data) {
+      // Récupérez les liens des nouvelles à partir de la réponse de l'API
+      const links = data.articles.map(article => article.url);
+  
+      // Affichez les liens dans l'élément HTML précédemment créé
+      links.forEach(link => {
+        $("#news").append(`<p><a href="${link}">${link}</a></p>`);
+      });
+    });
+  </script>
+  
+</body>
