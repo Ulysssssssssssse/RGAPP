@@ -7,7 +7,7 @@ require_once 'config.php';
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
 
-    $check = $bdd->prepare('SELECT pseudo, email, password FROM utilisateurs WHERE email = ?');
+    $check = $bdd->prepare('SELECT idUtilisateur, pseudo, email, password FROM utilisateurs WHERE email = ?');
     $check->execute(array($email));
     $data = $check->fetch();
     $row = $check->rowCount();
@@ -21,6 +21,8 @@ require_once 'config.php';
             if($data['password'] === $password)
             {
                 $_SESSION['user'] = $data['pseudo'];
+                $_SESSION['email'] = $email;
+
                 header('location:accueil.php');
             } else header('location:connexion.php?login_err=password');
         }else header('location:connexion.php?login_err=email');

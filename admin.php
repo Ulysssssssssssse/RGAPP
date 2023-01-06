@@ -30,39 +30,30 @@
                   <div href="#" class="logomenu"><img src="images/menu.png"></div>
                   <ul>
                     <li><a href="ACCUEIL.php">Accueil</a></li>
-                    <li><a href="PARAMETRES.php">Paramètres</a></li>
+                    <li><a href="PARAMETRES.html">Paramètres</a></li>
                     <li><a href="DONNEES.html">Vos trajets</a></li>
-                    <li><a href="connexion.php">Se déconnecter</a></li>
+                    <li><a href="deconnexion.php">Se déconnecter</a></li>
                   </ul>
                 </li>
             </div>
             <div class="ligne2">
               <a href="ACCUEIL.php">Accueil</a>
-              <a href="PARAMETRES.php">Paramètres</a>
+              <a href="PARAMETRES.html">Paramètres</a>
               <a href="DONNEES.html">Vos trajets</a>
-              <a href="connexion.php">Se déconnecter</a>
+              <a href="deconnexion.php">Se déconnecter</a>
             </div>
         <script src="headerresponsive.js"></script>
 </header>
 
     
-    <h3> Bonjour <?php echo $_SESSION['user']; ?></h3>
+    <h3> Bonjour <?php echo $_SESSION['user']; ?>.</div></h3>
 
 
-<div class="leftcolumn">
-     <div class="card">
-      <h2>Moyenne du dernier trajet<a href="DONNEES.html"><img src="images/logoplus.png"></a></h2>
-      <div id="barchart" style="height: 200px;"></div>
-      <p></p>
-    </div>
-</div>
 
-<div class="rightcolumn">
     <div class="card">
       <h2>Rechercher un utilisateur</h2>
     </div>
     <input type="text" class="form-control" id="live_search" autocomplete="off" placeholder="Search ...">
-</div>
 
 <div id="searchresult"></div>
 

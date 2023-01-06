@@ -1,3 +1,11 @@
+<?php
+
+    session_start();
+    if (!isset($_SESSION['user']))
+        header('location:connexion.php');
+    
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,7 +18,7 @@
 </head>
 
     <body id="parametres">
-        <header>
+    <header>
             <div class="ligne1">
             <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
             <h1 class="titre">rGapp</h1>
@@ -20,27 +28,30 @@
                   <div href="#" class="logomenu"><img src="images/menu.png"></div>
                   <ul>
                     <li><a href="ACCUEIL.php">Accueil</a></li>
-                    <li><a href="PARAMETRES.html">Paramètres</a></li>
+                    <li><a href="PARAMETRES.php">Paramètres</a></li>
                     <li><a href="DONNEES.html">Vos trajets</a></li>
-                    <li><a href="deconnexion.php">Se déconnecter</a></li>
+                    <li><a href="connexion.php">Se déconnecter</a></li>
                   </ul>
                 </li>
             </div>
             <div class="ligne2">
               <a href="ACCUEIL.php">Accueil</a>
-              <a href="PARAMETRES.html">Paramètres</a>
+              <a href="PARAMETRES.php">Paramètres</a>
               <a href="DONNEES.html">Vos trajets</a>
-              <a href="deconnexion.php">Se déconnecter</a>
+              <a href="connexion.php">Se déconnecter</a>
             </div>
         <script src="headerresponsive.js"></script>
-        </header>
-
+</header>
+    <div class="informationsprofil">
+      <h3>Vos informations </h3>
+      Nom utilisateur: <?php echo $_SESSION['user']; ?> 
+      <br>   
+      Email: <?php echo $_SESSION['email']; ?>
+    </div>
     <form action="parametres_traitement.php" method="post">
     <div class="parametres">
-        <div class="titreprofil">
+
         <h1>Modifier votre profil</h1>
-        <!-- <img src="images/photoprofil.png" alt="photoprofil"> -->
-        </div>
         <br>
         <input type="email" class="barre" placeholder="Nouvel email" name="email" required>
         <br><br>
@@ -51,13 +62,7 @@
         <button type="submit" class="bouton" value="Valider" name="connexion">Valider</button>
     </div>
     </form>
-
-    <footer>           
-            <a href="CGU.html">Mentions légales</a>
-            <a href="mailto:ridegreencontact@gmail.com" title="ridegreencontact@gmail.com">Contact</a>
-            <a href="FAQ.html">FAQ</a>
-    </footer>
-    <!-- <?php include('footer.php'); ?> -->
+    <?php include('footer.php'); ?>
 
 </body>
 </html>
