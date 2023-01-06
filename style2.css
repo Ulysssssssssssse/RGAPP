@@ -64,7 +64,7 @@
     align-items: center;
     position:absolute;
     left: 10%;
-    top: 25%;
+    top: 30%;
     background: rgba(190,234,255,0.6);
     background-size:contain;
     width: 300px;
@@ -80,7 +80,7 @@ div.inscription{
 .barre
 {
     color: black;
-    background: rgba(190,234,255,0.15);
+    background: rgba(190,234,255,0);
     border: 0cm;
     border-bottom: 1px solid darkgreen;
     font-size: 1.25em;
