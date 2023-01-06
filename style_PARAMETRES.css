@@ -13,13 +13,21 @@
     align-items: center;
     background: rgba(190,234,255,0.85);
     position:absolute;
-    top: 30%;
-    right: 35%;
+
+    top:15%;      /*pour centrer la box*/
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
     color: green;
-    height: 400px;
-    width: 500px;
+    height: max-content;
+    width: max-content;
     border-radius: 30px;
-    padding: 20px;
+    padding-top: 35px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 50px;
 }
 
 .titreprofil

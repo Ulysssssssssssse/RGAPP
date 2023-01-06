@@ -33,11 +33,12 @@ header
     text-decoration: none;
 }
 
+
 footer
 {
     position:fixed;
-    display: flex;
     bottom:0;
+    display: flex;
     justify-content: space-around;
     font-size:2em ;
     background: #BEEAFF;

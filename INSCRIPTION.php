@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,26 +9,36 @@
     <link rel="stylesheet" href="style2.css" />
     <title>rGapp</title>
 </head>
-     
-<body id="inscription">
-    <header>
-        <div class="ligne1">
-        <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
-        <h1 class="titre">rGapp</h1>
-        <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" /></a>
-        </div>
-        <div class="ligne2">
-            <a href="PRESENTATION.html">Présentation</a>
-            <a href="connexion.php">Connexion</a>
-            <a href="INSCRIPTION.php">Inscription</a>
-        </div>
-    </header>
 
-        <?php
+            <body id="inscription">
+            <header>
+            <div class="ligne1">
+            <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
+            <h1 class="titre">rGapp</h1>
+            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                  </ul>
+                </li>
+            </ul>
+            </div>
+            <div class="ligne2">
+                <a href="PRESENTATION.html">Présentation</a>
+                <a href="connexion.php">Connexion</a>
+                <a href="INSCRIPTION.php">Inscription</a>
+            </div>
+            <script src="headerresponsive.js"></script>    
+
+            </header>
+            <?php
             if(isset($_GET['reg_err']))
             {
                 $err = htmlspecialchars($_GET['reg_err']);
-
                 switch($err)
                 {
                     case 'success':

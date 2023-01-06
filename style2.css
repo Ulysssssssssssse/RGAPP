@@ -33,7 +33,16 @@
   font-size: 0.4cm
 }
 
+.about
+{
+    display: flex;
+    flex-wrap: wrap;
+}
 
+.news
+{
+    
+}
 .parametres
 {
     background: #BEEAFF;
