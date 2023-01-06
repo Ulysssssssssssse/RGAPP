@@ -11,31 +11,31 @@
 </head>
 
 
-            <body id="connexion">
-            <header>
-            <div class="ligne1">
-            <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
-            <h1 class="titre">rGapp</h1>
-            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
-            <ul class="navbar">
-                <li >
-                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
-                  <ul>
-                    <li><a href="Présentation.html">Présentation</a></li>
-                    <li><a href="connexion.php">Connexion</a></li>
-                    <li><a href="inscription.php">Inscription</a></li>
-                  </ul>
-                </li>
+    <body id="connexion">
+    <header>
+    <div class="ligne1">
+    <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
+    <h1 class="titre">rGapp</h1>
+    <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
+    <ul class="navbar">
+        <li >
+            <div href="#" class="logomenu"><img src="images/menu.png"></div>
+            <ul>
+            <li><a href="Présentation.html">Présentation</a></li>
+            <li><a href="connexion.php">Connexion</a></li>
+            <li><a href="inscription.php">Inscription</a></li>
             </ul>
-            </div>
-            <div class="ligne2">
-                <a href="PRESENTATION.html">Présentation</a>
-                <a href="connexion.php">Connexion</a>
-                <a href="INSCRIPTION.php">Inscription</a>
-            </div>
-        <script src="headerresponsive.js"></script>    
+        </li>
+    </ul>
+    </div>
+    <div class="ligne2">
+        <a href="PRESENTATION.html">Présentation</a>
+        <a href="connexion.php">Connexion</a>
+        <a href="INSCRIPTION.php">Inscription</a>
+    </div>
+    <script src="headerresponsive.js"></script>    
 
-        </header>
+    </header>
 
 
 
