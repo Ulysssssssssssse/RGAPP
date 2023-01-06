@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style_menudéroulant.css" />
     <title>rGapp</title>
 </head>
 
@@ -112,8 +113,7 @@
             </div>
             <br>
             <button type = "submit" class="btn btn-primary btn-block">Inscription</button>
-            <br>
-            <a href="connexion.php" style="font-size: 1.5em;">Connexion</a>
+            
             </div>
         </form>
 

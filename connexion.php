@@ -7,35 +7,37 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />  <!-- Style bootstrap pour les alertes ! -->
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css" />
+    <link rel="stylesheet" href="style_menudéroulant.css" />
+
     <title> rGapp </title>
 </head>
 
 
     <body id="connexion">
     <header>
-    <div class="ligne1">
-    <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
-    <h1 class="titre">rGapp</h1>
-    <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
-    <ul class="navbar">
-        <li >
-            <div href="#" class="logomenu"><img src="images/menu.png"></div>
-            <ul>
-            <li><a href="Présentation.html">Présentation</a></li>
-            <li><a href="connexion.php">Connexion</a></li>
-            <li><a href="inscription.php">Inscription</a></li>
+            <div class="ligne1">
+            <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
+            <h1 class="titre">rGapp</h1>
+            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
+            <ul class="navbar">
+                <li >
+                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
+                  <ul>
+                    <li><a href="Présentation.html">Présentation</a></li>
+                    <li><a href="connexion.php">Connexion</a></li>
+                    <li><a href="inscription.php">Inscription</a></li>
+                  </ul>
+                </li>
             </ul>
-        </li>
-    </ul>
-    </div>
-    <div class="ligne2">
-        <a href="PRESENTATION.html">Présentation</a>
-        <a href="connexion.php">Connexion</a>
-        <a href="INSCRIPTION.php">Inscription</a>
-    </div>
-    <script src="headerresponsive.js"></script>    
+            </div>
+            <div class="ligne2">
+                <a href="PRESENTATION.html">Présentation</a>
+                <a href="connexion.php">Connexion</a>
+                <a href="INSCRIPTION.php">Inscription</a>
+            </div>
+            <script src="headerresponsive.js"></script>    
 
-    </header>
+            </header>
 
 
 
@@ -85,8 +87,7 @@
             <input class="barre" type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
         <br> <br>
             <button class="btn btn-primary btn-block" type="submit" value="Connexion" name=Connexion >Connexion</button>
-            <br>
-            <a href="inscription.php" style="font-size: 1.5em;">Inscription</a>
+            
     </div>
     </form>
 </div>
