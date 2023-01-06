@@ -10,11 +10,12 @@ header
 
 .ligne1
 {
-font-size: 1.5em;
-display: flex;
-justify-content: space-between;
-background: rgba(190,234,255,0.85);
-color: green;
+    font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    background: rgba(190,234,255,0.85);
+    color: green;
+    padding: 10px;
 }
 
 .ligne2
@@ -30,7 +31,6 @@ color: green;
 .ligne2 a
 {
     text-decoration: none;
-
 }
 
 footer
