@@ -143,7 +143,8 @@ ALTER TABLE `faq`
 -- AUTO_INCREMENT pour la table `utilisateurs`
 --
 ALTER TABLE `utilisateurs`
-  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `idUtilisateur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7,
+  ADD UNIQUE(`pseudo`);
 
 --
 -- Contraintes pour les tables déchargées
