@@ -1,4 +1,5 @@
 <?php
+session_start();
 require_once 'config.php';
 
 if(isset($_POST['pseudo']) && isset($_POST['password']) && isset($_POST['password_retype']))  
@@ -34,15 +35,19 @@ if(isset($_POST['pseudo']) && isset($_POST['password']) && isset($_POST['passwor
                                 'password' => $password
                             )
                         );
-                        header('Location:inscription.php?reg_err=success');
 
+                        // Récupération des données de l'utilisateur pour l'authentification
+                        $check = $bdd->prepare('SELECT idUtilisateur, pseudo, email, password FROM utilisateurs WHERE email=?');
+                        $check -> execute(array($email));
+                        $data = $check->fetch();
+
+                        // Initialisation de la session de l'utilisateur et redirection vers la page d'accueil
+                        $_SESSION['user'] = $data['pseudo'];
+                        $_SESSION['email'] = $email;
+                        header('location:accueil.php');
                     } else header('Location: inscription.php?reg_err=password');
                 } else header('Location: inscription.php?reg_err=email');
             } else header('Location: inscription.php?reg_err=email_length');
         } else header('Location: inscription.php?reg_err=pseudo_length');
     } else header('Location: inscription.php?reg_err=already');
-
-
-    // else header : redirection vers la page 
 }
-
