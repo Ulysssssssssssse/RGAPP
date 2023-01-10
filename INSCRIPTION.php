@@ -43,13 +43,6 @@
         $err = htmlspecialchars($_GET['reg_err']);
         switch($err)
         {
-            case 'success':
-    ?>
-                    <div class="alert alert-success">
-                        <strong>Succès </strong> inscription reussie ! 
-                    </div>
-                    <?php
-                    break;
 
             case 'password':
                     ?>
@@ -83,14 +76,23 @@
                     <?php
                     break;
 
-
             case 'already':
                     ?>
                     <div class="alert alert-danger">
-                        <strong>Erreur </strong> compte deja existant ! <!-- Test OK-->
+                        <strong>Erreur </strong> compte déjà existant ! <!-- Test OK-->
                     </div>
                     <?php
                     break;
+
+            case 'already_pseudo':
+                    ?>
+                    <div class="alert alert-danger">
+                        <strong>Erreur </strong> pseudo déjà existant ! <!-- Test OK-->
+                    </div>
+                    <?php
+                    break;
+            
+            
 
         }
     }
