@@ -47,7 +47,7 @@
     <br>   
     Email: <?php echo $_SESSION['email']; ?>
   </div>
-  
+
   <form action="parametres_traitement.php" method="post">
     <div class="parametres">
         <h1>Modifier votre profil</h1>
@@ -56,7 +56,7 @@
         <br><br>
         <input type="password" class="barre" placeholder="Nouveau mot de passe" name="password" required>
         <br><br>
-        <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password" required>
+        <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password_retype" required>
         <br><br>
         <button type="submit" class="bouton" value="Valider" name="connexion">Valider</button>
     </div>
