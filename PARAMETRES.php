@@ -52,13 +52,13 @@
     <div class="parametres">
         <h1>Modifier votre profil</h1>
         <br>
-        <input type="email" class="barre" placeholder="Nouvel email" name="email" required>
+        <input type="email" class="barre" placeholder="Nouvel email" name="email">
         <br><br>
-        <input type="password" class="barre" placeholder="Nouveau mot de passe" name="password" required>
+        <input type="password" class="barre" placeholder="Nouveau mot de passe" name="password">
         <br><br>
-        <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password_retype" required>
+        <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password_retype">
         <br><br>
-        <button type="submit" class="bouton" value="Valider" name="connexion">Valider</button>
+        <button type="submit" class="bouton" value="Valider" name="Valider">Valider</button>
     </div>
   </form>
 
