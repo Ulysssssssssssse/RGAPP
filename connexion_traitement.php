@@ -2,32 +2,50 @@
 session_start();
 require_once 'config.php';
 
- if (isset($_POST['email']) && isset($_POST['password']))
- {
+if (isset($_POST['email']) && isset($_POST['password'])) {
     $email = htmlspecialchars($_POST['email']);
     $password = htmlspecialchars($_POST['password']);
 
-    $check = $bdd->prepare('SELECT idUtilisateur, pseudo, email, password FROM utilisateurs WHERE email = ?');
+    // Check if email exists in database
+    $check = $bdd->prepare('SELECT idUtilisateur, pseudo, email, password, isAdmin FROM utilisateurs WHERE email = ?');
     $check->execute(array($email));
     $data = $check->fetch();
     $row = $check->rowCount();
 
-    if($row == 1)
-    {
-        if(filter_var($email, FILTER_VALIDATE_EMAIL))
-        {
-
+    // If email exists
+    if($row == 1) {
+        // Check email format
+        if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
             $password = hash('sha256', $password);
-            if($data['password'] === $password)
-            {
+            // Check if entered password matches password in database
+            if($data['password'] === $password) {
                 $_SESSION['user'] = $data['pseudo'];
                 $_SESSION['email'] = $email;
-
-                header('location:accueil.php');
-            } else header('location:connexion.php?login_err=password');
-        }else header('location:connexion.php?login_err=email');
-    } else header('location:connexion.php?login_err=already');
-} else header('location:connexion.php');
-
+                // Check if user is admin
+                if($data['isAdmin'] == TRUE) {
+                    // Redirect to admin homepage
+                    header('location:admin.php');
+                } else {
+                    // Redirect to homepage
+                    header('location:accueil.php');
+                }
+            } else {
+                // PW error
+                header('location:connexion.php?login_err=password');
+            }
+        } else {
+            // Email format error
+            header('location:connexion.php?login_err=email');
+        }
+    } else {
+        // Non existant error
+        header('location:connexion.php?login_err=already');
+    }
+} else {
+    // Empty error
+    header('location:connexion.php');
+}
 
 //Header : redirection vers une page
+
+?>
