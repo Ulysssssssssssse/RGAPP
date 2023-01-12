@@ -21,8 +21,9 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
             if($data['password'] === $password) {
                 $_SESSION['user'] = $data['pseudo'];
                 $_SESSION['email'] = $email;
+                $_SESSION['isAdmin'] = $data['isAdmin'];
                 // Check if user is admin
-                if($data['isAdmin'] == TRUE) {
+                if($_SESSION['isAdmin']) {
                     // Redirect to admin homepage
                     header('location:admin.php');
                 } else {
