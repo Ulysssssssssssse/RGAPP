@@ -28,7 +28,7 @@
             <li><a href="ACCUEIL.php">Accueil</a></li>
             <li><a href="PARAMETRES.php">Paramètres</a></li>
             <li><a href="DONNEES.html">Vos trajets</a></li>
-            <li><a href="connexion.php">Se déconnecter</a></li>
+            <li><a href="deconnexion.php">Se déconnecter</a></li>
           </ul>
         </li>
     </div>
@@ -36,7 +36,7 @@
       <a href="ACCUEIL.php">Accueil</a>
       <a href="PARAMETRES.php">Paramètres</a>
       <a href="DONNEES.html">Vos trajets</a>
-      <a href="connexion.php">Se déconnecter</a>
+      <a href="deconnexion.php">Se déconnecter</a>
     </div>
     <script src="headerresponsive.js"></script>
   </header>
