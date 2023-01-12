@@ -1,8 +1,13 @@
 <?php
-
     session_start();
-    if (!isset($_SESSION['user']))
-        header('location:connexion.php');
+    if (!isset($_SESSION['user'])) {
+      header('location:connexion.php');
+    }
+
+    // Redirect to homepage if not an admin
+    if (!$_SESSION['isAdmin']) {
+      header('location:accueil.php');
+    }
 ?>
 
 <!DOCTYPE html>
