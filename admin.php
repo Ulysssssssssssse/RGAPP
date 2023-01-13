@@ -18,7 +18,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="style_ACCUEIL.css" />
         <link rel="stylesheet" href="style_menudéroulant.css" />
-        <title>rGapp</title>
+        <title>Gestion</title>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="charts.js"></script>
 </head>
@@ -35,7 +35,7 @@
                   <div href="#" class="logomenu"><img src="images/menu.png"></div>
                   <ul>
                     <li><a href="ACCUEIL.php">Accueil</a></li>
-                    <li><a href="PARAMETRES.html">Paramètres</a></li>
+                    <li><a href="PARAMETRES.php">Paramètres</a></li>
                     <li><a href="DONNEES.html">Vos trajets</a></li>
                     <li><a href="deconnexion.php">Se déconnecter</a></li>
                   </ul>

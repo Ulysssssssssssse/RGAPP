@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="style_PARAMETRES.css" />
     <link rel="stylesheet" href="style_menudéroulant.css" />
     <link rel="stylesheet" href="style.css" />
-    <title>rGapp</title>
+    <title>Paramètre</title>
 </head>
 
 <body id="parametres">

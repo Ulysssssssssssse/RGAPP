@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="style_ACCUEIL.css" />
         <link rel="stylesheet" href="style_menudéroulant.css" />
-        <title>rGapp</title>
+        <title>Accueil</title>
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
         <script type="text/javascript" src="charts.js"></script>
 </head>
@@ -84,7 +84,7 @@
             $("#searchresult").html(data);
           }
         });
-      }else{
+      } else {
         $("searchresult").css("display","none");
       }
     });

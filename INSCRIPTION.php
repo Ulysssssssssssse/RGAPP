@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style_menudéroulant.css" />
-    <title>rGapp</title>
+    <title>Inscription</title>
 </head>
 
 <body id="inscription">

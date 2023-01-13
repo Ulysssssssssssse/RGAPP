@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style_menudéroulant.css" />
 
-    <title> rGapp </title>
+    <title>Connexion</title>
 </head>
 
 
