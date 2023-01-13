@@ -1,7 +1,8 @@
 <?php
   session_start();
-  if (!isset($_SESSION['user']))
+  if(!isset($_SESSION['user'])){
       header('location:connexion.php');
+  }
 ?>
 
 <!DOCTYPE html>
@@ -28,15 +29,27 @@
       <li >
         <div href="#" class="logomenu"><img src="images/menu.png"></div>
         <ul>
-          <li><a href="accueil.php">Accueil</a></li>
+
+          <?php if($_SESSION['isAdmin']) { ?>
+            <li><a href="admin.php">Gestion</a></li>
+          <?php } else { ?>
+            <li><a href="accueil.php">Accueil</a></li>
+          <?php } ?>
+
           <li><a href="parametres.php">Paramètres</a></li>
           <li><a href="DONNEES.html">Vos trajets</a></li>
           <li><a href="deconnexion.php">Se déconnecter</a></li>
         </ul>
       </li>
   </div>
+
   <div class="ligne2">
-    <a href="accueil.php">Accueil</a>
+    <?php if($_SESSION['isAdmin']) { ?>
+     <a href="admin.php">Gestion</a>
+    <?php } else { ?>
+      <a href="accueil.php">Accueil</a>
+    <?php } ?>
+
     <a href="parametres.php">Paramètres</a>
     <a href="DONNEES.html">Vos trajets</a>
     <a href="deconnexion.php">Se déconnecter</a>
