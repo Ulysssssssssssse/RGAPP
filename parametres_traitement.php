@@ -18,9 +18,9 @@ if(isset($_POST['password']) && isset($_POST['password_retype'])) {
             ]);
             echo "mdp changé";
         } if($password != $password_retype) {
-            header('Location:PARAMETRES.php?reg_err=passworddiff');
+            header('Location:parametres.php?reg_err=passworddiff');
         } else {
-            header('Location:PARAMETRES.php?reg_err=password');
+            header('Location:parametres.php?reg_err=password');
         }
     }
 }
