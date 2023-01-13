@@ -7,11 +7,8 @@ if(!$con){
 }
 
 
-
-
 if(isset($_POST['input'])){
-
-    $input = $_POST['input'];
+    $input = htmlspecialchars($_POST['input']);
     $query = "SELECT * FROM utilisateurs WHERE pseudo LIKE '{$input}%' OR idUtilisateur LIKE '{$input}%' OR email LIKE '{$input}%' ";
     $result = mysqli_query($con, $query);
 
@@ -29,7 +26,6 @@ if(isset($_POST['input'])){
 
             <tbody>
                 <?php 
-
                 while($row = mysqli_fetch_assoc($result)){
 
                     $id = $row['idUtilisateur'];
@@ -46,15 +42,14 @@ if(isset($_POST['input'])){
                         <td><?php echo $date_inscription;?></td>
                     </tr>
 
-                    <?php 
+                <?php 
                 }
-                    ?>
+                ?>
             </tbody>
         </table>
 
-        <?php 
-
-    }else{
+    <?php 
+    } else {
         echo "<h6> </h6>";
     }
 }
