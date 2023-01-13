@@ -25,32 +25,8 @@
 
 <body id="accueil">
 
-<header>
-            <div class="ligne1">
-            <a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
-            <h1 class="titre">rGapp</h1>
-            <a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
-            <ul class="navbar">
-                <li >
-                  <div href="#" class="logomenu"><img src="images/menu.png"></div>
-                  <ul>
-                    <li><a href="accueil.php">Accueil</a></li>
-                    <li><a href="parametres.php">Paramètres</a></li>
-                    <li><a href="DONNEES.html">Vos trajets</a></li>
-                    <li><a href="deconnexion.php">Se déconnecter</a></li>
-                  </ul>
-                </li>
-            </div>
-            <div class="ligne2">
-              <a href="accueil.php">Accueil</a>
-              <a href="PARAMETRES.html">Paramètres</a>
-              <a href="DONNEES.html">Vos trajets</a>
-              <a href="deconnexion.php">Se déconnecter</a>
-            </div>
-        <script src="headerresponsive.js"></script>
-</header>
+<?php include('header.php'); ?>
 
-    
     <h3> Bonjour <?php echo $_SESSION['user']; ?>.</div></h3>
 
 
