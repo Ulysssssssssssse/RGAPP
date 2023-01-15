@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="style2.css" />
     <link rel="stylesheet" href="style_menudéroulant.css" />
+    <script type="text/javascript" src="inscription.js" defer></script>
     <title>Inscription</title>
 </head>
 
@@ -107,6 +108,7 @@
         <input class="barre" type="email" name="email"  placeholder="Email" required="required" autocomplete="off">
     <br><br>
         <input class="barre" type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
+        <span id="pwMsg"></span>
     <br><br>
         <input class="barre" type="password" name="password_retype" placeholder="Retapez le mot de passe" required="required" autocomplete="off">
     <br>
