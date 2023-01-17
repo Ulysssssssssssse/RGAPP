@@ -1,13 +1,15 @@
-<?php 
+<?php
+$servername = "localhost";
+$username = "lightsail";
+$password = "lightsail";
+$dbname = "isepbike";
 
-try
-{
-    $bdd = new PDO('mysql:host=localhost; dbname=isepbike; charset=utf8', 'lightsail', 'lightsail');}
-    
-    catch(Exception $e)
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-{
-    die('Erreur' . $e->getMessage());
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-
+echo "Connected successfully";
 ?>
