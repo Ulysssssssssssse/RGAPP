@@ -68,6 +68,7 @@ if (isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['password'
   $data = $check->fetch();
   $_SESSION['user'] = $data['pseudo'];
   $_SESSION['email'] = $email;
+  $_SESSION['isAdmin'] = 0;
   header('location:accueil.php');
 }
 
