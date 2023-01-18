@@ -16,11 +16,13 @@ if(isset($_POST['password']) && isset($_POST['password_retype'])) {
                 'pseudo' => $_SESSION['user'],
                 'password' => $password
             ]);
-            echo "mdp changé";
-        } if($password != $password_retype) {
-            header('Location:parametres.php?reg_err=passworddiff');
+            setcookie('pwChanged', TRUE, time() + (10), "/");
         } else {
-            header('Location:parametres.php?reg_err=password');
+            if($password != $password_retype) {
+                header('Location:parametres.php?reg_err=passworddiff');
+            } else {
+                header('Location:parametres.php?reg_err=password');
+            }
         }
     }
 }
@@ -36,8 +38,10 @@ if(isset($_POST['email'])) {
             'email' => $email
         ]);
         $_SESSION['email'] = $email;
-        echo "email changé";
+        setcookie('emailChanged', TRUE, time() + (10), "/");
     }
 }
+
+header('Location:parametres.php');
 
 ?>

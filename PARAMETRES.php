@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="style_PARAMETRES.css" />
     <link rel="stylesheet" href="style_menudéroulant.css" />
     <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript" src="parametres.js" defer></script>
     <title>Paramètre</title>
 </head>
 
@@ -31,13 +32,19 @@
     <div class="parametres">
         <h1>Modifier votre profil</h1>
         <br>
-        <input type="email" class="barre" placeholder="Nouvel email" name="email">
+          <input type="email" class="barre" placeholder="Nouvel email" name="email">
+          <span id="emailMsg"></span>
         <br><br>
-        <input type="password" class="barre" placeholder="Nouveau mot de passe" name="password">
+          <input type="email" class="barre" placeholder="Confirmer nouvel email" name="email_retype">
+          <span id="emailConfirmMsg"></span>
         <br><br>
-        <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password_retype">
+          <input type="password" class="barre" placeholder="Nouveau mot de passe" name="password">
+          <span id="pwMsg"></span>
         <br><br>
-        <button type="submit" class="bouton" value="Valider" name="Valider">Valider</button>
+          <input type="password" class="barre" placeholder="Confirmer mot de passe" name="password_retype">
+          <span id="pwConfirmMsg"></span>
+        <br><br>
+          <button type="submit" class="bouton" value="Valider" name="Valider">Valider</button>
     </div>
   </form>
 
