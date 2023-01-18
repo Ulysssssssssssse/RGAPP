@@ -38,67 +38,64 @@
 <script src="headerresponsive.js"></script>    
 </header>
 
-    <?php
-    if(isset($_GET['reg_err']))
+<?php
+if(isset($_GET['reg_err']))
+{
+    $err = htmlspecialchars($_GET['reg_err']);
+    switch($err)
     {
-        $err = htmlspecialchars($_GET['reg_err']);
-        switch($err)
-        {
 
-            case 'password':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong> Erreur </strong> mot de passe différents !   <!-- Test OK-->
-                    </div>
-                    <?php
-                    break;
+        case 'password':
+                ?>
+                <div class="alert alert-danger">
+                    <strong> Erreur </strong> mot de passe différents !   <!-- Test OK-->
+                </div>
+                <?php
+                break;
 
-            case 'email':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong> Erreur </strong> email non valide ! <!-- Test OK, il faut modifier l'attribut "mail" en "text" pour pouvoir afficher l'erreur -->
-                    </div>
-                    <?php
-                    break;
-                            
-            case 'email_length':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong> Erreur </strong> email trop long ! <!-- Test OK, inspecter et transformer 'mail' en 'text' pour afficher l'erreur-->
-                    </div>
-                    <?php
-                    break;
+        case 'email':
+                ?>
+                <div class="alert alert-danger">
+                    <strong> Erreur </strong> email non valide ! <!-- Test OK, il faut modifier l'attribut "mail" en "text" pour pouvoir afficher l'erreur -->
+                </div>
+                <?php
+                break;
+                        
+        case 'email_length':
+                ?>
+                <div class="alert alert-danger">
+                    <strong> Erreur </strong> email trop long ! <!-- Test OK, inspecter et transformer 'mail' en 'text' pour afficher l'erreur-->
+                </div>
+                <?php
+                break;
 
-            case 'pseudo_length':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong> Erreur </strong> pseudo trop long ! <!-- Test OK-->
-                    </div>
-                    <?php
-                    break;
+        case 'pseudo_length':
+                ?>
+                <div class="alert alert-danger">
+                    <strong> Erreur </strong> pseudo trop long ! <!-- Test OK-->
+                </div>
+                <?php
+                break;
 
-            case 'already':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur </strong> compte déjà existant ! <!-- Test OK-->
-                    </div>
-                    <?php
-                    break;
+        case 'already':
+                ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur </strong> compte déjà existant ! <!-- Test OK-->
+                </div>
+                <?php
+                break;
 
-            case 'already_pseudo':
-                    ?>
-                    <div class="alert alert-danger">
-                        <strong>Erreur </strong> pseudo déjà existant ! <!-- Test OK-->
-                    </div>
-                    <?php
-                    break;
-            
-            
+        case 'already_pseudo':
+                ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur </strong> pseudo déjà existant ! <!-- Test OK-->
+                </div>
+                <?php
+                break;
 
-        }
     }
-
-        ?>
+}
+?>
 
 <form action="inscription_traitement.php" method="post">
     <div class="inscription">

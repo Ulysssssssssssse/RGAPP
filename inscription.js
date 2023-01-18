@@ -1,6 +1,5 @@
 var pwField = document.querySelector("input[name='password']");
 
-
 pwField.addEventListener("change", function() {
     var msg;
     var pw = pwField.value;
