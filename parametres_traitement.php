@@ -16,7 +16,7 @@ if(isset($_POST['password']) && isset($_POST['password_retype'])) {
                 'pseudo' => $_SESSION['user'],
                 'password' => $password
             ]);
-            setcookie('pwChanged', TRUE, time() + (10), "/");
+            setcookie('pwChanged', TRUE, time() + (3), "/");
         } else {
             if($password != $password_retype) {
                 header('Location:parametres.php?reg_err=passworddiff');
@@ -40,7 +40,7 @@ if(isset($_POST['email']) && isset($_POST['email_retype'])) {
                 'email' => $email
             ]);
             $_SESSION['email'] = $email;
-            setcookie('emailChanged', TRUE, time() + (10), "/");
+            setcookie('emailChanged', TRUE, time() + (3), "/");
         }
     }
 }
