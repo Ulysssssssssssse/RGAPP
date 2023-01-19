@@ -100,22 +100,25 @@ if(isset($_GET['reg_err']))
 <form action="inscription_traitement.php" method="post">
     <div class="inscription">
     <h1> Inscription </h1>
-        <input class="barre" type="text" name="pseudo" placeholder="Pseudo" required="required" autocomplete="off">
+        <input class="barre" type="text" name="pseudo" placeholder="Pseudo" autocomplete="off">
+        <span id="pseudoMsg"></span>
     <br><br>
-        <input class="barre" type="email" name="email"  placeholder="Email" required="required" autocomplete="off">
+        <input class="barre" type="email" name="email"  placeholder="Email" autocomplete="off">
+        <span id="emailMsg"></span>
     <br><br>
-        <input class="barre" type="password" name="password" placeholder="Mot de passe" required="required" autocomplete="off">
+        <input class="barre" type="password" name="password" placeholder="Mot de passe" autocomplete="off">
         <span id="pwMsg"></span>
     <br><br>
-        <input class="barre" type="password" name="password_retype" placeholder="Retapez le mot de passe" required="required" autocomplete="off">
+        <input class="barre" type="password" name="password_retype" placeholder="Retapez le mot de passe" autocomplete="off">
+        <span id="pwConfirmMsg"></span>
     <br>
     <div style="color: black;width: 7cm;">
-        <input type="checkbox" id="CGU" name="CGU" value="CGU" required="required">
+        <input type="checkbox" id="CGU" name="CGU">
         En cochant la case, vous acceptez nos <a href="CGU.html">termes et conditions d'utilisation</a>
+        <span id="checkboxMsg"></span>
     </div>
     <br>
-    <button type = "submit" class="btn btn-primary btn-block">Inscription</button>
-    
+    <button type="submit" class="btn btn-primary btn-block">Inscription</button>
     </div>
 </form>
 

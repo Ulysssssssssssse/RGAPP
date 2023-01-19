@@ -97,7 +97,7 @@ submit.addEventListener("click", function(event) {
   event.preventDefault();
   checkPw();
   checkEmail();
-  if(pwWellFilled == true && pwConfirmWellFilled == true && emailWellFilled == true && emailConfirmWellFilled == true){
+  if(pwWellFilled && pwConfirmWellFilled && emailWellFilled && emailConfirmWellFilled){
     form.submit();
   }
   else {
