@@ -10,26 +10,30 @@ if (isset($_POST['email']) && isset($_POST['pseudo']) && isset($_POST['password'
   $password = htmlspecialchars($_POST['password']);
   $password_retype = htmlspecialchars($_POST['password_retype']);
 
-  // email in DB?
-  $check = $bdd->prepare('SELECT * FROM utilisateurs WHERE email=?');
-  $check->execute([$email]);
-  $data = $check->fetch();
-  // If yes, "error"
-  if ($check->rowCount() > 0) {
-    header('Location: inscription.php?reg_err=already');
-    exit;
-  }
-
   // pseudo in DB?
   $check = $bdd->prepare('SELECT * FROM utilisateurs WHERE pseudo=?');
   $check->execute([$pseudo]);
   $data = $check->fetch();
   // If yes, "error"
   if ($check->rowCount() > 0) {
-    header('Location: inscription.php?reg_err=pseudo_already');
+    setcookie('pseudo', $pseudo, time() + (2), "/");
+    setcookie('email', $email, time() + (2), "/");
+    header('Location: inscription.php?reg_err=already_pseudo');
     exit;
   }
-  
+
+  // email in DB?
+  $check = $bdd->prepare('SELECT * FROM utilisateurs WHERE email=?');
+  $check->execute([$email]);
+  $data = $check->fetch();
+  // If yes, "error"
+  if ($check->rowCount() > 0) {
+    setcookie('pseudo', $pseudo, time() + (2), "/");
+    setcookie('email', $email, time() + (2), "/");
+    header('Location: inscription.php?reg_err=already');
+    exit;
+  }
+
   // Vérif taille 'pseudo' et 'email'
   if (strlen($pseudo) > 100) {
     header('Location: inscription.php?reg_err=pseudo_length');

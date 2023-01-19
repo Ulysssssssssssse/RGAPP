@@ -77,14 +77,6 @@ if(isset($_GET['reg_err']))
                 <?php
                 break;
 
-        case 'already':
-                ?>
-                <div class="alert alert-danger">
-                    <strong>Erreur </strong> compte déjà existant ! <!-- Test OK-->
-                </div>
-                <?php
-                break;
-
         case 'already_pseudo':
                 ?>
                 <div class="alert alert-danger">
@@ -93,6 +85,13 @@ if(isset($_GET['reg_err']))
                 <?php
                 break;
 
+        case 'already':
+                ?>
+                <div class="alert alert-danger">
+                    <strong>Erreur </strong> compte déjà existant ! <!-- Test OK-->
+                </div>
+                <?php
+                break;
     }
 }
 ?>
@@ -100,10 +99,12 @@ if(isset($_GET['reg_err']))
 <form action="inscription_traitement.php" method="post">
     <div class="inscription">
     <h1> Inscription </h1>
-        <input class="barre" type="text" name="pseudo" placeholder="Pseudo" autocomplete="off">
+        <input class="barre" type="text" name="pseudo" placeholder="Pseudo" autocomplete="off"
+        <?php if(isset($_COOKIE['pseudo'])) {echo "value='".$_COOKIE['pseudo']."'";}?>>
         <span id="pseudoMsg"></span>
     <br><br>
-        <input class="barre" type="email" name="email"  placeholder="Email" autocomplete="off">
+        <input class="barre" type="email" name="email"  placeholder="Email" autocomplete="off"
+        <?php if(isset($_COOKIE['email'])) {echo "value='".$_COOKIE['email']."'";}?>>
         <span id="emailMsg"></span>
     <br><br>
         <input class="barre" type="password" name="password" placeholder="Mot de passe" autocomplete="off">
