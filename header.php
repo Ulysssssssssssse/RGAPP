@@ -1,8 +1,8 @@
 <header>
 <div class="ligne1">
-<a href="PRESENTATION.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
+<a href="presentation.html"><img src="images/Ride Green logo.png" alt="logo Ridegreen" id="logo" /></a>
 <h1 class="titre">rGapp</h1>
-<a href="PRESENTATION.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
+<a href="presentation.html"><img src="images/Isepbike logo.png" alt="logo Ridegreen" id="logo" class="logoisepbike"/></a>
 <ul class="navbar">
     <li >
         <div href="#" class="logomenu"><img src="images/menu.png"></div>
