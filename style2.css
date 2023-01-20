@@ -99,15 +99,4 @@ div.inscription{
     border-radius: 30px;
 }
 
-footer
-{
-    position: absolute;
-    display: flex;
-    bottom:0;
-    justify-content: space-around;
-    font-size:2em ;
-    background: #BEEAFF;
-    width: 100%;
-    color:azure;
-    background: rgba(190,234,255,0.65);
-}
+
