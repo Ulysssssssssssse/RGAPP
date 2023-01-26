@@ -9,7 +9,7 @@
         <ul>
 
         <?php if($_SESSION['isAdmin']) { ?>
-            <li><a href="gestion.php">Gestion</a></li>
+            <li><a href="admin.php">Gestion</a></li>
         <?php } else { ?>
             <li><a href="accueil.php">Accueil</a></li>
         <?php } ?>
@@ -27,7 +27,7 @@
 
 <div class="ligne2">
     <?php if($_SESSION['isAdmin']) { ?>
-        <a href="gestion.php">Gestion</a>
+        <a href="admin.php">Gestion</a>
     <?php } else { ?>
         <a href="accueil.php">Accueil</a>
     <?php } ?>

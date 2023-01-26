@@ -21,7 +21,6 @@ if(isset($_POST['input'])){
                     <th> Pseudo </th>
                     <th> Email </th>
                     <th> Date d'inscription </th>
-                    <th> Gestionnaire </th>
                 </tr>
             </thead>
 
@@ -33,7 +32,7 @@ if(isset($_POST['input'])){
                     $pseudo = $row['pseudo'];
                     $email = $row['email'];
                     $date_inscription = $row['dateInscription'];
-                    $isAdmin = $row['isAdmin'];
+
                     ?>
 
                     <tr>
@@ -41,7 +40,6 @@ if(isset($_POST['input'])){
                         <td><?php echo $pseudo;?></td>
                         <td><?php echo $email;?></td>
                         <td><?php echo $date_inscription;?></td>
-                        <td><?php echo $isAdmin;?></td>
                     </tr>
 
                 <?php 

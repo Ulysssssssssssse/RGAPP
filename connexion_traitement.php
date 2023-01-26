@@ -25,7 +25,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
                 // Check if user is admin
                 if($_SESSION['isAdmin']) {
                     // Redirect to admin homepage
-                    header('location:gestion.php');
+                    header('location:admin.php');
                 } else {
                     // Redirect to homepage
                     header('location:accueil.php');
