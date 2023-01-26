@@ -114,8 +114,8 @@ if(isset($_GET['reg_err']))
         <span id="pwConfirmMsg"></span>
     <br>
     <div style="color: black;width: 7cm;">
-        <input type="checkbox" id="CGU" name="CGU">
-        En cochant la case, vous acceptez nos <a href="CGU.html">termes et conditions d'utilisation</a>
+        <input type="checkbox" id="cgu" name="cgu">
+        En cochant la case, vous acceptez nos <a href="cgu.html">termes et conditions d'utilisation</a>
         <span id="checkboxMsg"></span>
     </div>
     <br>
