@@ -27,7 +27,7 @@
 
 <div class="leftcolumn">
   <div class="card">
-    <h2>Moyenne du dernier trajet : <a href="donnees.html">En savoir plus</a></h2>
+    <h2>Moyenne du dernier trajet : <a href="testData.php">En savoir plus</a></h2>
     <div id="barchart" style="height: 200px;"></div>
     </div>
   </div>

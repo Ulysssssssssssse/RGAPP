@@ -26,13 +26,7 @@
 
 
 
-
-
-
-
 <?php
-
-
 
 $ch = curl_init();
 curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=G02E");
@@ -52,7 +46,7 @@ echo "<th>Numéro d'objet</th>";
 echo "<th>Type de requête</th>";
 echo "<th>Numéro de capteur</th>";
 echo "<th>Valeur retournée</th>";
-echo "<th>Numéro de trame</th>";
+echo "<th>Valeur température</th>";
 echo "<th>Checksum</th>";
 echo "<th>Année</th>";
 echo "<th>Mois</th>";
@@ -63,6 +57,7 @@ echo "<th>Secondes</th>";
 echo "</tr>";
 
 foreach ($data_tab as $index => $trame) {
+    if ($index >= 1388) { // Condition pour commencer à la trame 1389, les trames avant ne nous interesent pas
     list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($trame, "%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
     $trame_number = $index + 1;
     echo "<tr>";
@@ -81,9 +76,11 @@ foreach ($data_tab as $index => $trame) {
     echo "<td>$min</td>";
     echo "<td>$sec</td>";
     echo "</tr>";
+    }
 }
 
 echo "</table>";
+
 
 
 

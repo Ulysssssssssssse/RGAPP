@@ -17,7 +17,7 @@
         <li><a href="parametres.php">Paramètres</a></li>
 
         <?php if(!$_SESSION['isAdmin']) { ?>
-            <li><a href="donnees.html">Vos trajets</a></li>
+            <li><a href="testData.php">Vos datas</a></li>
         <?php } ?>
 
         <li><a href="deconnexion.php">Se déconnecter</a></li>
@@ -34,7 +34,7 @@
 
     <a href="parametres.php">Paramètres</a>
     <?php if(!$_SESSION['isAdmin']) { ?>
-        <a href="donnees.html">Vos trajets</a>
+        <a href="testData.php">Vos Datas</a>
     <?php } ?>
     <a href="deconnexion.php">Se déconnecter</a>
 </div>
