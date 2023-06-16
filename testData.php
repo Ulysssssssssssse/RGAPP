@@ -57,7 +57,7 @@ echo "<th>Secondes</th>";
 echo "</tr>";
 
 foreach ($data_tab as $index => $trame) {
-    if ($index >= 1388) { // Condition pour commencer à la trame 1389, les trames avant ne nous interesent pas
+    if ($index >= 1388) { // Condition pour commencer à la trame 1389, les trames avant ne nous interesent pas car elles ne contiennent pas les bonnes valeurs de température
     list($t, $o, $r, $c, $n, $v, $a, $x, $year, $month, $day, $hour, $min, $sec) = sscanf($trame, "%1s%4s%1s%1s%2s%4s%4s%2s%4s%2s%2s%2s%2s%2s");
     $trame_number = $index + 1;
     echo "<tr>";
