@@ -44,6 +44,9 @@ if(!isset($_SESSION['user'])){
     
 <h3> Bonjour <?php echo $_SESSION['user']; ?></h3>
 
+<div style="display:flex; justify-content:center; align-items:center; margin-top:20px;">
+  <button id="bouttonAllumerLED">Allumer la LED</button>
+</div>
 <?php
 
 $ch = curl_init();
@@ -121,6 +124,18 @@ function comparer(index) {
 function getCellValue(row, index) {
   return $(row).children("td").eq(index).text();
 }
+
+//Ici, on a le code JS pour l'envoie de la demande d'allumage de LED
+document.getElementById("monBouton").addEventListener("click", function(){
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      console.log(this.responseText); // Afficher la réponse du serveur dans la console
+    }
+  };
+  xhttp.open("GET", "allumer_led.php", true);
+  xhttp.send();
+});
 </script>
 
 </body>
