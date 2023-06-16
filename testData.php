@@ -55,7 +55,7 @@ curl_close($ch);
 
 $data_tab = str_split($data, 33);
 
-echo "Tabular Data:<br />";
+echo "Voici les données issues de la carte :<br />";
 echo "<table id='myTable'>";
 echo "<thead>";
 echo "<tr>";
