@@ -126,14 +126,14 @@ function getCellValue(row, index) {
 }
 
 //Ici, on a le code JS pour l'envoie de la demande d'allumage de LED
-document.getElementById("monBouton").addEventListener("click", function(){
+document.getElementById("BouttonAllumerLED").addEventListener("click", function(){
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
       console.log(this.responseText); // Afficher la réponse du serveur dans la console
     }
   };
-  xhttp.open("GET", "allumer_led.php", true);
+  xhttp.open("GET", "testData.php", true);
   xhttp.send();
 });
 </script>
