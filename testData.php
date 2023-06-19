@@ -127,13 +127,20 @@ function getCellValue(row, index) {
 }
 
 //Ici, on a le code JS pour l'envoie de la demande d'allumage de LED
-document.getElementById("BouttonAllumerLED").addEventListener("click", function(){
+document.getElementById("bouttonAllumerLED").addEventListener("click", function(){
+  // Envoie la requête GET à l'API pour allumer la LED
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
-      console.log(this.responseText); // Afficher la réponse du serveur dans la console
+      console.log("La trame a été envoyée."); // Afficher un message dans la console si la trame a été envoyée avec succès
+    }
+    else if (this.readyState == 4 && this.status != 200) {
+      console.error("Erreur lors de l'envoi de la trame :", this.responseText); // Afficher un message d'erreur dans la console si la trame n'a pas été envoyée avec succès
     }
   };
+
+  // Exemple Pour la reception curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=G02E");
+
   xhttp.open("GET", "http://projets-tomcat.isep.fr:8080/appService/?ACTION=COMMAND&TEAM=G02E&TRAME=1", true);
   xhttp.send();
 });
