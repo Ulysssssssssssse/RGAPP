@@ -59,6 +59,7 @@ curl_close($ch);
 $data_tab = str_split($data, 33);
 
 echo "Voici les données issues de la carte :<br />";
+echo "format 0XX.X exemple : 0250 = 25.0° <br />";
 echo "<table id='myTable'>";
 echo "<thead>";
 echo "<tr>";
