@@ -128,7 +128,7 @@ function getCellValue(row, index) {
 
 //Ici, on a le code JS pour l'envoie de la demande d'allumage de LED
 document.getElementById("bouttonAllumerLED").addEventListener("click", function(){
-  // Envoie la requête GET à l'API pour allumer la LED
+  // Envoie la requête GET à la passerelle pour allumer la LED
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -138,13 +138,11 @@ document.getElementById("bouttonAllumerLED").addEventListener("click", function(
       console.error("Erreur lors de l'envoi de la trame :", this.responseText); // Afficher un message d'erreur dans la console si la trame n'a pas été envoyée avec succès
     }
   };
-
-  // Exemple Pour la reception curl_setopt($ch, CURLOPT_URL, "http://projets-tomcat.isep.fr:8080/appService/?ACTION=GETLOG&TEAM=G02E");
-
-  xhttp.open("GET", "http://projets-tomcat.isep.fr:8080/appService/?ACTION=COMMAND&TEAM=G02E&TRAME=1", true);
+  xhttp.open("GET", "http://projets-tomcat.isep.fr:8080/appService/?ACTION=COMMAND&TEAM=G02E&TRAME=1", true); // Remplacez "adresseIP" et "port" par les valeurs correspondantes pour votre passerelle
   xhttp.send();
 });
 </script>
 
 </body>
 </html>
+
