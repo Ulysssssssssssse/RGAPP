@@ -45,7 +45,7 @@ if(!isset($_SESSION['user'])){
 <h3> Bonjour <?php echo $_SESSION['user']; ?></h3>
 
 <div style="display:flex; justify-content:center; align-items:center; margin-top:20px;">
-  <button id="bouttonAllumerLED">Allumer la LED</button>
+  <button id="boutonInverserLED">Inverser état LED</button>
 </div>
 <?php
 
@@ -127,7 +127,7 @@ function getCellValue(row, index) {
 }
 
 //Ici, on a le code JS pour l'envoie de la demande d'allumage de LED
-document.getElementById("bouttonAllumerLED").addEventListener("click", function(){
+document.getElementById("boutonInverserLED").addEventListener("click", function(){
   // Envoie la requête GET à la passerelle pour allumer la LED
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
