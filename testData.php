@@ -134,7 +134,7 @@ document.getElementById("BouttonAllumerLED").addEventListener("click", function(
       console.log(this.responseText); // Afficher la réponse du serveur dans la console
     }
   };
-  xhttp.open("GET", "testData.php", true);
+  xhttp.open("GET", "http://projets-tomcat.isep.fr:8080/appService/?ACTION=COMMAND&TEAM=G02E&TRAME=1", true);
   xhttp.send();
 });
 </script>
