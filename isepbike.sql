@@ -40,8 +40,9 @@ CREATE TABLE `capteurs` (
 --
 
 INSERT INTO `capteurs` (`idCapteur`, `TypeCapteur`, `NomCapteur`) VALUES
-(1, 'Moxoxyde', 'Capteur 1'),
-(2, 'Cardiaque', 'Capteur 2');
+(3, 'Temperature', 'Capteur 1'),
+(7, 'Son', 'Capteur 2'),
+(9, 'ECG', 'Capteur 3');
 
 -- --------------------------------------------------------
 
