@@ -30,7 +30,7 @@ USE `isepbike`;
 --
 
 CREATE TABLE `capteurs` (
-  `idCapteur` int(11) NOT NULL,
+  `IdCapteur` int(11) NOT NULL,
   `TypeCapteur` varchar(20) NOT NULL,
   `NomCapteur` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
@@ -39,7 +39,7 @@ CREATE TABLE `capteurs` (
 -- Déchargement des données de la table `capteurs`
 --
 
-INSERT INTO `capteurs` (`idCapteur`, `TypeCapteur`, `NomCapteur`) VALUES
+INSERT INTO `capteurs` (`IdCapteur`, `TypeCapteur`, `NomCapteur`) VALUES
 (3, 'Temperature', 'Capteur 1'),
 (7, 'Son', 'Capteur 2'),
 (9, 'ECG', 'Capteur 3');
@@ -108,7 +108,7 @@ INSERT INTO `utilisateurs` (`idUtilisateur`, `pseudo`, `email`, `password`, `isA
 -- Index pour la table `capteurs`
 --
 ALTER TABLE `capteurs`
-  ADD PRIMARY KEY (`idCapteur`);
+  ADD PRIMARY KEY (`IdCapteur`);
 
 --
 -- Index pour la table `faq`
@@ -138,7 +138,7 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `capteurs`
 --
 ALTER TABLE `capteurs`
-  MODIFY `idCapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `IdCapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `faq`
@@ -166,7 +166,7 @@ ALTER TABLE `utilisateurs`
 -- Contraintes pour la table `mesures`
 --
 ALTER TABLE `mesures`
-  ADD CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`IdCapteur`) REFERENCES `capteurs` (`idCapteur`);
+  ADD CONSTRAINT `mesures_ibfk_1` FOREIGN KEY (`IdCapteur`) REFERENCES `capteurs` (`IdCapteur`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
