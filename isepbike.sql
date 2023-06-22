@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : mar. 10 jan. 2023 à 15:21
+-- Généré le : jeu. 22 juin 2023 à 16:39
 -- Version du serveur : 10.4.25-MariaDB
 -- Version de PHP : 8.1.10
 
@@ -66,9 +66,16 @@ CREATE TABLE `mesures` (
   `IdMesure` int(11) NOT NULL,
   `IdCapteur` int(11) NOT NULL COMMENT 'Foreign Key',
   `DateMesure` date NOT NULL,
-  `HeureMesure` int(11) NOT NULL,
-  `ValeurMesure` int(11) NOT NULL
+  `HeureMesure` time NOT NULL,
+  `ValeurMesure` float NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Déchargement des données de la table `mesures`
+--
+
+INSERT INTO `mesures` (`IdMesure`, `IdCapteur`, `DateMesure`, `HeureMesure`, `ValeurMesure`) VALUES
+(1, 3, '2023-03-22', '00:00:00', 25.3);
 
 -- --------------------------------------------------------
 
@@ -91,7 +98,7 @@ CREATE TABLE `utilisateurs` (
 
 INSERT INTO `utilisateurs` (`idUtilisateur`, `pseudo`, `email`, `password`, `isAdmin`, `dateInscription`) VALUES
 (1, 'admin', 'ridegreencontact@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 1, '2022-12-12 20:22:19'),
-(2, 'nico', 'nico@gmail.com', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', 0, '2022-12-12 20:28:00');
+(2, 'test', 'test1@gmail.com', '0b8d2889977f51b5d424f841904c17a87e3d5e70d99a3e63fecf52ba3e529904', 0, '2023-01-26 15:58:26');
 
 --
 -- Index pour les tables déchargées
@@ -131,13 +138,19 @@ ALTER TABLE `utilisateurs`
 -- AUTO_INCREMENT pour la table `capteurs`
 --
 ALTER TABLE `capteurs`
-  MODIFY `idCapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `idCapteur` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT pour la table `faq`
 --
 ALTER TABLE `faq`
   MODIFY `idFaq` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT pour la table `mesures`
+--
+ALTER TABLE `mesures`
+  MODIFY `IdMesure` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT pour la table `utilisateurs`
